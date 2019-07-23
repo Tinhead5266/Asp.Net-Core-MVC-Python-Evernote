@@ -1,0 +1,11 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting freeze
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c2/16/ca9fcd75d8c958b2260d521f18d7e697de5d2133fc68fc968feef4a348b6/freeze-1.0.10.tar.gz
+Requirement already satisfied: six in d:\software\developmenttools\python3\envs\python27\lib\site-packages (from freeze) (1.12.0)
+Building wheels for collected packages: freeze
+  Building wheel for freeze (setup.py): started
+  Building wheel for freeze (setup.py): finished with status 'done'
+  Stored in directory: C:\Users\Tinhead\AppData\Local\pip\Cache\wheels\f4\98\97\10884fd85ece036b80485d0dd125dee474cfd46e97560340e6
+Successfully built freeze
+Installing collected packages: freeze
+Successfully installed freeze-1.0.10

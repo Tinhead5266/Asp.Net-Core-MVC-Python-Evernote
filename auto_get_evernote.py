@@ -186,20 +186,19 @@ def ReplaceBodyHtml(html, hash_code, image_data, image_type):
     # base64_image_str = base64.encodestring(image_data)
     # base64_image_str = 'data:{0};base64,{1}'.format(image_type, base64_image_str)
     # image_data = base64.b64decode(base64_image_str)
-    file_name = note_images_path + '\\' + str(int(round(time.time()) * 1000)) + '.png'
-    image_file = open(file_name, "wb+")
+    file_name = str(int(round(time.time()) * 1000)) + '.png'
+    file_path = note_images_path + file_name
+    image_file = open(file_path, "wb+")
     image_file.write(image_data)
     image_file.close()
-    image_file = open(file_name, "rb")
+    image_file = open(file_path, "rb")
     FtpUpload(file_name, image_file)
     image_file.close()
-    os.remove(file_name)
+    os.remove(file_path)
 
-    file_name = str(int(round(time.time()) * 1000)) + '.png'
-    file_path = note_image_http_url + file_name
     result = enmedia.replace("en-media", "img")
     # src = "src=\"%s\"" % (base64_image_str)
-    src = "src=\"%s\"" % file_path
+    src = "src=\"%s\"" % note_image_http_url + file_name
     result = result.replace("<img", "<img " + src)
     return html.replace(enmedia, result)
 

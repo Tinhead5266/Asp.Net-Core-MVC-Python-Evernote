@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<en-note>
+    <div>asp .Net core mvc+python + evernote 实现个人博客</div>
+    <div>思路</div>
+    <div>通过python 调用 evernote SDK 读取 笔记存放在数据库中</div>
+    <div><a href="https://dev.yinxiang.com/doc/start/python.php">https://dev.yinxiang.com/doc/start/python.php</a></div>
+    <div><br/></div>
+    <div>显示在web上&nbsp;&nbsp;</div>
+    <div><br/></div>
+    <div>具体</div>
+    <div>python读取evernote 笔记存放与数据库（mysql），定时更新（存在问题，只更改更新过后的笔记和新增的，需要通过一种类似与记录上次更新时间与本次更新时间的对比，暂不知读取的笔记是否有该字段）</div>
+    <div>通过项目通过 asp .Net core mvc 部署在 阿里云 centos7上运行。</div>
+    <div><br/></div>
+    <div>详细设计图</div>
+    <div><img src="http://blog.tinhead.xyz/images/note_images/1563892545000.png" hash="4e3bc54c2349d121dd8673376212816a"
+              type="image/png"/></div>
+    <div><br/></div>
+    <div><span style="font-weight: bold;">具体实现</span></div>
+    <div><br/></div>
+    <div>下载ervernote SDK</div>
+    <div>印象笔记 Python SDK和其它的印象笔记 SDK 均托管在Github上。你可以通过点击下载按钮将整个 SDK 作为一个 zip 文件下载下来。在解压缩之后，运行 python
+        安装脚本将库安装到你的系统中（需要管理员权限）：
+    </div>
+    <div>python setup.py install</div>
+    <div>这段脚本会安装 SDK （还有其它运行依赖的模块）并将所有东西放到一个 Python 知道的目录下，这样你不必担心在开始使用前会弄乱PYTHONPATH。</div>
+    <div>或者，如果你使用 git 来管理项目，那你可以通过执行以下命令，将印象笔记 Python SDK 作为一个 git submodule 来安装。</div>
+    <div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;">
+        <div>git submodule add git://github.com/yinxiang-dev/evernote-sdk-python/ evernote</div>
+        <div>git submodule init</div>
+        <div>git submodule update</div>
+    </div>
+    <div>无论何时发布了新版本的 SDK，你都可以执行git submodule update，变更会自动反映到你的 SDK 中。不要忘记在在下载或升级之后运行<span
+            style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">setup.py</span>脚本。
+    </div>
+    <div><br/></div>
+    <div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;">
+        <div># auth_token申请地址：https://dev.yinxiang.com/doc/articles/dev_tokens.php</div>
+        <div>auth_token = &quot;S=s64:U=133f619:E=16c299788b0:C=16c058b02a0:P=1cd:A=en-devtoken:V=2:H=9d33d7358ebebc8&quot;</div>
+        <div># 关掉沙盒模式</div>
+        <div>sandbox = False</div>
+        <div># True代表使用的国内的印象笔记，而不是Evernote国际版</div>
+        <div>china = True</div>
+        <div>client = EvernoteClient(token=auth_token, sandbox=sandbox, china=china, service_host=&apos;app.yinxiang.com&apos;)</div>
+        <div># 用户信息</div>
+        <div>user_store = client.get_user_store()</div>
+        <div># 笔记</div>
+        <div>note_store = client.get_note_store()</div>
+        <div><br/></div>
+        <div># 获取笔记列表</div>
+        <div>notebooks = note_store.listNotebooks()</div>
+        <div><br/></div>
+        <div><br/></div>
+        <div>logging.info(&apos;Found %s notebooks&apos;, len(notebooks))</div>
+        <div># 循环所有笔记本</div>
+        <div>for notebook in notebooks:</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;# 笔记本guid</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;guid = notebook.guid</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;# 笔记本名称（并非单个笔记的名称）</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;notebook_name = notebook.name</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;# 笔记本组名称</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;stack = notebook.stack</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;logging.info(&apos;guid: [%s], notebook [%s]&apos;, guid, notebook_name)</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;# 笔记名称不是XMind的跳过</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;if notebook_name != diary_notebook_name:</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;# 创建NoteFilter对象查询笔记的参数</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;f = NoteStore.NoteFilter()</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;f.notebookGuid = guid</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;# 获取笔记本的所有标签</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;tags_list = note_store.listTagsByNotebook(notebook.guid)</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;# 获取笔记本下的所有笔记</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;notes_info = note_store.findNotes(f, 0, 999)</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;# 循环笔记本下的所有笔记</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;for note in notes_info.notes:</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# 获取笔记内容</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;note_content = note_store.getNoteContent(note.guid)</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# 笔记名称</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;note_title = note.title</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# 笔记标签</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not_tag_names = note.tagNames</div>
+        <div><br/></div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logging.info(&apos;guid: [%s], notebook [%s],notebookName
+            [%s]&apos;, guid, notebook_name, note_title)
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logging.info(&apos;content: [%s]&apos;, note_content)</div>
+        <div><br/></div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# 获取笔记数据资源信息（图片、语言、文件等）</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;note_resources = note.resources</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try:</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if note_resources is not None:
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for res in
+            note_resources:
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logging.info(</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&apos;note_resources_guid:
+            [%s], note_resources_width [%s], note_resources_height [%s], note_resources_type [%s]&apos;,
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res.guid,
+            res.width, res.height, res.mime)
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
+            获取资源的guid
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res_guid
+            = res.guid
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
+            获取资源
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attachment
+            = note_store.getResource(res_guid, True, False, True, False)
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
+            attachments = note_store.getResourceRecognition(res.guid)
+        </div>
+        <div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; attachment_data= attachment.data
+        </div>
+        <div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # 问题1#</div>
+        <div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+        <div><br/></div>
+        <div><br/></div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;except Exception as e:</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logging.info(&apos;Exception: [%s]&apos;,
+            e)
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;finally:</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pass</div>
+    </div>
+    <div><br/></div>
+    <div><span style="font-weight: bold;"># 问题1#</span></div>
+    <div>得到的资源文件是二进制的数据</div>
+    <div><b>尝试1</b><span>&nbsp;&nbsp; &nbsp;</span></div>
+    <div><b>python 读取二进制 显示图片</b>&nbsp; （<a href="https://blog.csdn.net/baiyibin0530/article/details/51671808">https://blog.csdn.net/baiyibin0530/article/details/51671808</a>）
+    </div>
+    <div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;">
+        <div># 数据字符很长简写了</div>
+        <div>data_image_str=&apos;\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x05\xed\x00\x00\x06\x80\x08\x02\x00\x00\x00z\xc2\xe0$\x00\x01];IDATx\x9c\xec...........&apos;</div>
+        <div>x = np.fromstring(</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;data_image_str,</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;dtype=np.ubyte</div>
+        <div>)</div>
+        <div># x = x[0:1920]</div>
+        <div>x = x[1920:3840]</div>
+        <div># x = x[3840:5760]</div>
+        <div>x = x.reshape(60, 32)</div>
+        <div># print((x))</div>
+        <div>plt.imshow(x)</div>
+        <div>plt.axis(&apos;off&apos;)&nbsp;&nbsp;# clear x- and y-axes</div>
+        <div>plt.show()</div>
+    </div>
+    <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">显示结果</span></div>
+    <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;"><img
+            src="http://blog.tinhead.xyz/images/note_images/1563892561000.png" hash="3a7b66390a01994481302f3644ca1299"
+            type="image/png" width="362"/></span></div>
+    <div><br/></div>
+    <div>失败！！</div>
+    <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;"><b>尝试2&nbsp;</b></span></div>
+    <div><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;"><b>用base64编码&nbsp; 参考&nbsp;&nbsp;</b></span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;"><b>自己写的工具：把Evernote（印象笔记）的笔记导入到博客（Blog）中</b></span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">（</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">查看</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">源码发现</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">&nbsp; &nbsp;</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;"><a
+            href="https://blog.csdn.net/muzizongheng/article/details/14164445">https://blog.csdn.net/muzizongheng/article/details/14164445</a>&nbsp;</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">）</span></div>
+    <div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;">
+        <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">data_image_str=&apos;\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x05\xed\x00\x00\x06\x80\x08\x02\x00\x00\x00z\xc2\xe0$\x00\x01];IDATx\x9c\xec...........&apos;</span>
+        </div>
+        <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">base64_image_str = base64.encodestring(data_image_str)</span>
+        </div>
+        <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">base64_image_str = &apos;data:image/png;base64,&apos; + base64_image_str</span>
+        </div>
+    </div>
+    <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;"><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">将</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">base64_image_str的值复制到</span> <span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;"><a
+            href="http://imgbase64.duoshitong.com/">http://imgbase64.duoshitong.com/</a>&nbsp;显示如下</span></span></div>
+    <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;"><img
+            src="http://blog.tinhead.xyz/images/note_images/1563892561000.png" hash="6de67ec4b75418565621ac4e27d4d644"
+            type="image/png" width="390"/></span></div>
+    <div><br/></div>
+    <div>成功</div>
+    <div><br/></div>
+    <div>后来想想不用img 嵌套base64来显示图片了</div>
+    <div><b>将图片保存起来</b></div>
+    <div>此为&nbsp;<span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;"># 问题1# 的代码</span></div>
+    <div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;">
+        <div># 只保存image类型的代码 拥有的类型在这里查看&nbsp;https://dev.yinxiang.com/doc/articles/data_structure.php</div>
+        <div>if res_mime.find(&apos;image&apos;) &gt;= 0:</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;file_name = note_images_path + &apos;\\&apos; + str(int(round(time.time()) * 1000))
+            + &apos;.png&apos;
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;image_file = open(file_name, &quot;wb+&quot;)</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;image_file.write(attachment_data)</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;image_file.close()</div>
+    </div>
+    <div><br/></div>
+    <div><br/></div>
+    <div><br/></div>
+    <div>遇到一个坑&nbsp; &nbsp;<span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">python 属性赋值后变成了tuple类型</span>
+    </div>
+    <div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;">
+        <div>def GetAllNoteUpdateInfo(self):</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;all_note_update_info = []</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;note_update_info_data = self.sql_helper.ExecQuery(&apos;SELECT * FROM
+            evernote_blog.note_update_info;&apos;)
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;for note_update_info in note_update_info_data:</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_note_update_info_item = NoteUpdateInfo()</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_note_update_info_item.id = note_update_info[0]</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_note_update_info_item.note_guid =
+            note_update_info[1].encode(),
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_note_update_info_item.update_time =
+            long(note_update_info[2]),
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_note_update_info.append(</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_note_update_info_item</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;return all_note_update_info</div>
+    </div>
+    <div><br/></div>
+    <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">【</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">all_note_update_info</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">】的【</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">note_guid</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">】</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">和【</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">update_time</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">】莫名的变成</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">tuple类型</span><span
+            style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">（元组）折磨了近半个小时 发现</span></div>
+    <div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;">
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_note_update_info_item.note_guid =
+            note_update_info[1].encode(),
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_note_update_info_item.update_time =
+            long(note_update_info[2]),
+        </div>
+    </div>
+    <div><br/></div>
+    <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">赋值的时候后面多了【,】噗~~~~一口老血</span></div>
+    <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">去掉后就好了</span></div>
+    <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;">提莫的</span></div>
+    <div><br/></div>
+    <div><br/></div>
+    <div><br/></div>
+    <div><br/></div>
+    <div><br/></div>
+    <div><br/></div>
+</en-note>
+
+</body>
+</html>

@@ -21,8 +21,8 @@ class NoteInfoManager:
             for item_db in data_db:
                 item = Item()
                 item.id = item_db[0]
-                item.note_guid = (item_db[1] if item_db[1] else '').encode('utf-8')
-                item.update_time = int(item_db[2] if item_db[2] else 0)
+                item.update_time = int(item_db[1] if item_db[1] else 0)
+                item.note_guid = (item_db[2] if item_db[2] else '').encode('utf-8')
                 data.append(
                     item
                 )
@@ -53,7 +53,7 @@ class NoteInfoManager:
 
     # 获取所有笔记更新记录
     def GetAllNoteUpdateInfo(self):
-        data = self.sql_helper.ExecQuery('SELECT * FROM evernote_blog.note_update_info;')
+        data = self.sql_helper.ExecQuery('SELECT id,update_time,note_guid FROM evernote_blog.note_info;')
         all_note_update_info = self.FullNoteUpdateInfo(data)
         return all_note_update_info
 

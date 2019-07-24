@@ -4290,3 +4290,667 @@
 2019-07-24 15:26:49,838 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [53ada850-773a-4449-b376-77d329cb4ea0], notebook [software]
 2019-07-24 15:26:50,119 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [37ccd7b1-117a-4189-85f7-7520a3162c81], notebook [思达普工作交接]
 2019-07-24 15:26:50,446 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [c2133fe9-8379-4195-86eb-deaa7b60cbd3], notebook [PyCharm]
+2019-07-24 15:30:27,259 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:76] - INFO: 开始更新笔记: 20190724（周三）
+2019-07-24 15:30:30,529 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:226] - INFO: Found 59 notebooks
+2019-07-24 15:30:30,529 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [52d3ba71-70fd-4da5-9cfc-0eaefe64e5fe], notebook [工作]
+2019-07-24 15:30:30,915 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [231f0999-9a87-4ff4-9d7c-7fa5f69c8b02], notebook [正则表达式]
+2019-07-24 15:30:31,247 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [14c558c5-ff85-4cf7-985d-bcefc3357922], notebook [String]
+2019-07-24 15:30:31,572 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [288113f3-13c6-4895-ba9a-fbb19a2d3609], notebook [Path]
+2019-07-24 15:30:31,921 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [d450b58b-bd33-436f-a2a2-2474fa727957], notebook [Directory]
+2019-07-24 15:30:32,223 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [34678d6c-f68a-4a82-89e3-64b4e9ad0929], notebook [网站]
+2019-07-24 15:30:32,578 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [63eaa359-1678-4754-b0ab-b9e751269dab], notebook [HTML]
+2019-07-24 15:30:32,891 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [09ad99ca-82a1-4569-89eb-64b0c528a672], notebook [运算符]
+2019-07-24 15:30:33,191 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [2b580ac0-f85e-449a-9fe2-90a3f3330582], notebook [计划]
+2019-07-24 15:30:33,533 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [350d5f81-c7ed-4c76-8120-e97d8a5f18b4], notebook [邮件发送]
+2019-07-24 15:30:33,877 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [f6b6f677-bbe4-49c2-a7c4-175a5a258fb3], notebook [待完善笔记]
+2019-07-24 15:30:34,193 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [802e562e-3042-493f-86b4-e0a24b09a71b], notebook [VmallServer项目]
+2019-07-24 15:30:34,502 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [333c3362-008b-425d-99da-ad28b99ef5a3], notebook [List]
+2019-07-24 15:30:34,839 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [366bc53d-b6fe-4978-ab0a-299446cc68ed], notebook [Linq]
+2019-07-24 15:30:35,176 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [994fb801-a5d0-451c-9e32-f2b1491f16a6], notebook [JS]
+2019-07-24 15:30:35,500 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [234fb518-2e07-4e81-951e-1b34aaf13e10], notebook [邮件Report]
+2019-07-24 15:30:35,816 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [2ef2f679-df7d-4f66-8b2e-d710eb0099e4], notebook [Mailchimp]
+2019-07-24 15:30:36,181 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [bd37bb30-2df9-49ca-a567-a21e242f1803], notebook [优客需求]
+2019-07-24 15:30:36,546 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [ea969033-82e3-45b4-a576-c0ac0c5d3acb], notebook [CSS]
+2019-07-24 15:30:36,918 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [72c4605c-1da5-47f7-885c-9aed2614686a], notebook [Asp.Net]
+2019-07-24 15:30:37,243 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [b6a5f9c7-3092-451c-b73b-c626279a5e3f], notebook [Lodop]
+2019-07-24 15:30:37,543 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [d40ad245-a870-447b-abd1-534429699de0], notebook [DataTime]
+2019-07-24 15:30:37,825 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [3e1e25a0-f079-498e-87fb-6ec281cbc82b], notebook [PHP基础]
+2019-07-24 15:30:38,144 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [f434c3fd-f771-4c2f-a02d-e0d1f0c6d4d8], notebook [生活记录]
+2019-07-24 15:30:38,451 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [e4c7c2e4-6de4-4049-b89e-3ea455c2b990], notebook [泛型]
+2019-07-24 15:30:38,730 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [1e27af6b-6cf2-4910-ae79-2002fb9d2990], notebook [win10]
+2019-07-24 15:30:39,078 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [52c0fa40-3b5b-4317-bf88-856c68c1e1e5], notebook [游戏]
+2019-07-24 15:30:39,354 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [d1b56614-fbf0-4737-b75f-9e98d3272bd7], notebook [日常备忘]
+2019-07-24 15:30:39,638 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [9225885f-4c61-4939-ab65-72071b1fdfa9], notebook [Echaohuo]
+2019-07-24 15:30:39,940 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [997c9022-36cb-48bf-adf6-7bec377f77ba], notebook [环境安装]
+2019-07-24 15:30:40,273 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [f98f2a76-2bdf-4865-b649-b10466f37607], notebook [Install]
+2019-07-24 15:30:40,809 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [bb271cb1-eafb-400f-a219-08142102ed92], notebook [其他]
+2019-07-24 15:30:41,118 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [9e6f04e6-9da5-46da-9a44-54e475a90d9c], notebook [Command]
+2019-07-24 15:30:41,459 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [26551fe4-7b06-4b03-8aa6-eb23e757e3b3], notebook [deploy]
+2019-07-24 15:30:42,201 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:274] - INFO: 更新笔记: [部署 Centos7 + nginx+python]
+2019-07-24 15:30:50,773 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:317] - INFO: 笔记[部署 Centos7 + nginx+python]更新 成功
+2019-07-24 15:30:50,775 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [55b83f7a-b789-4d9f-b100-36c5171e386d], notebook [.net core]
+2019-07-24 15:30:51,088 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [5939e6f3-ac6e-480b-9bc9-c876bffc3420], notebook [生活]
+2019-07-24 15:30:51,384 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [7a72cf23-7e63-4440-a9b8-e2a98801dc58], notebook [优客工作交接]
+2019-07-24 15:30:51,713 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [f4bba7fc-40ca-4b59-a98e-851cc848e78e], notebook [VS]
+2019-07-24 15:30:52,138 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [ee278e1f-e26d-4239-a8eb-c51d5b9d850c], notebook [SQLServer]
+2019-07-24 15:30:52,474 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [3740954d-ff65-4809-83d3-cb4ce90fe178], notebook [基础]
+2019-07-24 15:30:52,763 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [4278f038-a19b-46cd-aec3-65274a4dba1d], notebook [MVC]
+2019-07-24 15:30:53,216 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [914b828f-ef0f-4826-b0ff-65065ee3bc29], notebook [来自小程序「印象笔记」]
+2019-07-24 15:30:53,509 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [d1bbd316-ca3c-446c-bf96-2e450bb51d1a], notebook [思达普工作需求]
+2019-07-24 15:30:53,821 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [0085d498-501f-4ab9-8301-d527d34dd6c2], notebook [设计理念]
+2019-07-24 15:30:54,135 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [97c8cb76-6fee-455a-888f-962cb28205ed], notebook [Bootstrap]
+2019-07-24 15:30:54,417 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [1505f73e-9f00-4898-8cfb-8af417ab3d66], notebook [Mysql]
+2019-07-24 15:30:54,730 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [d12b672a-cca9-4f1c-9d7f-5ce7bcea05b2], notebook [C#其他]
+2019-07-24 15:30:55,055 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [c0df815d-f272-4cc4-8ed1-7f7dc154cea7], notebook [思达普工作总结]
+2019-07-24 15:30:55,341 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [5beb41c8-bcfe-4130-b1c1-6ebdc0e225e1], notebook [微信开发]
+2019-07-24 15:30:55,654 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [9f346046-09e6-4ce1-a260-2008cb97a22c], notebook [Http]
+2019-07-24 15:30:56,055 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [c0709ab2-cc9a-4b04-aedb-28127e83f545], notebook [XMind]
+2019-07-24 15:30:56,401 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [bc2bdd5f-8e80-4cfb-93f0-260716c8d1cc], notebook [爬虫]
+2019-07-24 15:30:56,693 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [f36359b9-2592-46f1-90f5-b8661c3653bf], notebook [开发]
+2019-07-24 15:30:57,019 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [083addaa-26e5-4380-9f0a-82eb32622fc2], notebook [VSCode]
+2019-07-24 15:30:57,354 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [6a1e7487-63d3-49ba-aadb-fa52d3040dcb], notebook [CSDN]
+2019-07-24 15:30:57,635 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [7a9f7dd5-e6be-4736-abae-f39d7275fb80], notebook [Jquery]
+2019-07-24 15:30:58,030 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [53ada850-773a-4449-b376-77d329cb4ea0], notebook [software]
+2019-07-24 15:30:58,390 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [37ccd7b1-117a-4189-85f7-7520a3162c81], notebook [思达普工作交接]
+2019-07-24 15:30:58,753 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [c2133fe9-8379-4195-86eb-deaa7b60cbd3], notebook [PyCharm]
+2019-07-24 15:34:30,582 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:76] - INFO: 开始更新笔记: 20190724（周三）
+2019-07-24 15:34:32,709 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:226] - INFO: Found 59 notebooks
+2019-07-24 15:34:32,710 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [52d3ba71-70fd-4da5-9cfc-0eaefe64e5fe], notebook [工作]
+2019-07-24 15:34:33,039 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [231f0999-9a87-4ff4-9d7c-7fa5f69c8b02], notebook [正则表达式]
+2019-07-24 15:34:33,359 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [14c558c5-ff85-4cf7-985d-bcefc3357922], notebook [String]
+2019-07-24 15:34:33,641 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [288113f3-13c6-4895-ba9a-fbb19a2d3609], notebook [Path]
+2019-07-24 15:34:33,959 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [d450b58b-bd33-436f-a2a2-2474fa727957], notebook [Directory]
+2019-07-24 15:34:34,292 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [34678d6c-f68a-4a82-89e3-64b4e9ad0929], notebook [网站]
+2019-07-24 15:34:34,638 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [63eaa359-1678-4754-b0ab-b9e751269dab], notebook [HTML]
+2019-07-24 15:34:34,948 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [09ad99ca-82a1-4569-89eb-64b0c528a672], notebook [运算符]
+2019-07-24 15:34:35,293 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [2b580ac0-f85e-449a-9fe2-90a3f3330582], notebook [计划]
+2019-07-24 15:34:35,642 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [350d5f81-c7ed-4c76-8120-e97d8a5f18b4], notebook [邮件发送]
+2019-07-24 15:34:35,940 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [f6b6f677-bbe4-49c2-a7c4-175a5a258fb3], notebook [待完善笔记]
+2019-07-24 15:34:36,289 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [802e562e-3042-493f-86b4-e0a24b09a71b], notebook [VmallServer项目]
+2019-07-24 15:34:36,592 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [333c3362-008b-425d-99da-ad28b99ef5a3], notebook [List]
+2019-07-24 15:34:36,894 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [366bc53d-b6fe-4978-ab0a-299446cc68ed], notebook [Linq]
+2019-07-24 15:34:37,230 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [994fb801-a5d0-451c-9e32-f2b1491f16a6], notebook [JS]
+2019-07-24 15:34:37,595 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [234fb518-2e07-4e81-951e-1b34aaf13e10], notebook [邮件Report]
+2019-07-24 15:34:37,926 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [2ef2f679-df7d-4f66-8b2e-d710eb0099e4], notebook [Mailchimp]
+2019-07-24 15:34:38,286 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [bd37bb30-2df9-49ca-a567-a21e242f1803], notebook [优客需求]
+2019-07-24 15:34:38,671 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [ea969033-82e3-45b4-a576-c0ac0c5d3acb], notebook [CSS]
+2019-07-24 15:34:39,072 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [72c4605c-1da5-47f7-885c-9aed2614686a], notebook [Asp.Net]
+2019-07-24 15:34:39,355 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [b6a5f9c7-3092-451c-b73b-c626279a5e3f], notebook [Lodop]
+2019-07-24 15:34:39,658 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [d40ad245-a870-447b-abd1-534429699de0], notebook [DataTime]
+2019-07-24 15:34:39,961 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [3e1e25a0-f079-498e-87fb-6ec281cbc82b], notebook [PHP基础]
+2019-07-24 15:34:40,256 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [f434c3fd-f771-4c2f-a02d-e0d1f0c6d4d8], notebook [生活记录]
+2019-07-24 15:34:40,535 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [e4c7c2e4-6de4-4049-b89e-3ea455c2b990], notebook [泛型]
+2019-07-24 15:34:40,836 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [1e27af6b-6cf2-4910-ae79-2002fb9d2990], notebook [win10]
+2019-07-24 15:34:41,198 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [52c0fa40-3b5b-4317-bf88-856c68c1e1e5], notebook [游戏]
+2019-07-24 15:34:41,513 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [d1b56614-fbf0-4737-b75f-9e98d3272bd7], notebook [日常备忘]
+2019-07-24 15:34:41,792 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [9225885f-4c61-4939-ab65-72071b1fdfa9], notebook [Echaohuo]
+2019-07-24 15:34:42,101 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [997c9022-36cb-48bf-adf6-7bec377f77ba], notebook [环境安装]
+2019-07-24 15:34:42,426 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [f98f2a76-2bdf-4865-b649-b10466f37607], notebook [Install]
+2019-07-24 15:34:42,894 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [bb271cb1-eafb-400f-a219-08142102ed92], notebook [其他]
+2019-07-24 15:34:43,216 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [9e6f04e6-9da5-46da-9a44-54e475a90d9c], notebook [Command]
+2019-07-24 15:34:43,530 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [26551fe4-7b06-4b03-8aa6-eb23e757e3b3], notebook [deploy]
+2019-07-24 15:34:44,144 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:274] - INFO: 更新笔记: [部署 Centos7 + nginx+python]
+2019-07-24 15:34:53,493 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:317] - INFO: 笔记[部署 Centos7 + nginx+python]更新 成功
+2019-07-24 15:34:53,494 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [55b83f7a-b789-4d9f-b100-36c5171e386d], notebook [.net core]
+2019-07-24 15:34:53,832 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [5939e6f3-ac6e-480b-9bc9-c876bffc3420], notebook [生活]
+2019-07-24 15:34:54,193 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [7a72cf23-7e63-4440-a9b8-e2a98801dc58], notebook [优客工作交接]
+2019-07-24 15:34:54,516 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [f4bba7fc-40ca-4b59-a98e-851cc848e78e], notebook [VS]
+2019-07-24 15:34:54,844 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [ee278e1f-e26d-4239-a8eb-c51d5b9d850c], notebook [SQLServer]
+2019-07-24 15:34:55,177 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [3740954d-ff65-4809-83d3-cb4ce90fe178], notebook [基础]
+2019-07-24 15:34:55,530 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [4278f038-a19b-46cd-aec3-65274a4dba1d], notebook [MVC]
+2019-07-24 15:34:55,921 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [914b828f-ef0f-4826-b0ff-65065ee3bc29], notebook [来自小程序「印象笔记」]
+2019-07-24 15:34:56,256 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [d1bbd316-ca3c-446c-bf96-2e450bb51d1a], notebook [思达普工作需求]
+2019-07-24 15:34:56,551 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [0085d498-501f-4ab9-8301-d527d34dd6c2], notebook [设计理念]
+2019-07-24 15:34:56,828 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [97c8cb76-6fee-455a-888f-962cb28205ed], notebook [Bootstrap]
+2019-07-24 15:34:57,131 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [1505f73e-9f00-4898-8cfb-8af417ab3d66], notebook [Mysql]
+2019-07-24 15:34:57,446 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [d12b672a-cca9-4f1c-9d7f-5ce7bcea05b2], notebook [C#其他]
+2019-07-24 15:34:57,727 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [c0df815d-f272-4cc4-8ed1-7f7dc154cea7], notebook [思达普工作总结]
+2019-07-24 15:34:58,036 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [5beb41c8-bcfe-4130-b1c1-6ebdc0e225e1], notebook [微信开发]
+2019-07-24 15:34:58,322 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [9f346046-09e6-4ce1-a260-2008cb97a22c], notebook [Http]
+2019-07-24 15:34:58,688 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [c0709ab2-cc9a-4b04-aedb-28127e83f545], notebook [XMind]
+2019-07-24 15:34:59,048 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [bc2bdd5f-8e80-4cfb-93f0-260716c8d1cc], notebook [爬虫]
+2019-07-24 15:34:59,352 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [f36359b9-2592-46f1-90f5-b8661c3653bf], notebook [开发]
+2019-07-24 15:34:59,632 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [083addaa-26e5-4380-9f0a-82eb32622fc2], notebook [VSCode]
+2019-07-24 15:34:59,930 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [6a1e7487-63d3-49ba-aadb-fa52d3040dcb], notebook [CSDN]
+2019-07-24 15:35:00,236 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [7a9f7dd5-e6be-4736-abae-f39d7275fb80], notebook [Jquery]
+2019-07-24 15:35:00,592 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [53ada850-773a-4449-b376-77d329cb4ea0], notebook [software]
+2019-07-24 15:35:00,914 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [37ccd7b1-117a-4189-85f7-7520a3162c81], notebook [思达普工作交接]
+2019-07-24 15:35:01,250 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:240] - INFO: guid: [c2133fe9-8379-4195-86eb-deaa7b60cbd3], notebook [PyCharm]
+2019-07-24 16:15:39,801 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:74] - INFO: 开始更新笔记: 20190724（周三）
+2019-07-24 16:15:42,176 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:224] - INFO: Found 59 notebooks
+2019-07-24 16:15:42,177 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:238] - INFO: guid: [52d3ba71-70fd-4da5-9cfc-0eaefe64e5fe], notebook [工作]
+2019-07-24 16:15:42,882 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:272] - INFO: 添加笔记: [订单打印相关]
+2019-07-24 16:19:08,562 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:74] - INFO: 开始更新笔记: 20190724（周三）
+2019-07-24 16:19:10,904 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:224] - INFO: Found 59 notebooks
+2019-07-24 16:19:10,904 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:238] - INFO: guid: [52d3ba71-70fd-4da5-9cfc-0eaefe64e5fe], notebook [工作]
+2019-07-24 16:19:11,611 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:272] - INFO: 添加笔记: [订单打印相关]
+2019-07-24 16:21:32,154 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:75] - INFO: 开始更新笔记: 20190724（周三）
+2019-07-24 16:21:34,388 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:225] - INFO: Found 59 notebooks
+2019-07-24 16:21:34,388 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [52d3ba71-70fd-4da5-9cfc-0eaefe64e5fe], notebook [工作]
+2019-07-24 16:21:35,118 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [订单打印相关]
+2019-07-24 16:23:17,312 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:75] - INFO: 开始更新笔记: 20190724（周三）
+2019-07-24 16:23:19,421 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:225] - INFO: Found 59 notebooks
+2019-07-24 16:23:19,421 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [52d3ba71-70fd-4da5-9cfc-0eaefe64e5fe], notebook [工作]
+2019-07-24 16:23:20,079 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [订单打印相关]
+2019-07-24 16:23:52,740 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[订单打印相关]添加 成功
+2019-07-24 16:23:54,707 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [后台更新步骤]
+2019-07-24 16:23:57,289 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[后台更新步骤]添加 成功
+2019-07-24 16:23:57,598 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [23种设计模式]
+2019-07-24 16:23:58,158 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[23种设计模式]添加 成功
+2019-07-24 16:23:58,476 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [工具参数]
+2019-07-24 16:23:58,992 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[工具参数]添加 成功
+2019-07-24 16:23:59,303 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [调试]
+2019-07-24 16:23:59,737 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[调试]添加 成功
+2019-07-24 16:24:00,279 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [api 参数]
+2019-07-24 16:24:00,901 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[api 参数]添加 成功
+2019-07-24 16:24:01,204 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [如何配置 翻译配置文件]
+2019-07-24 16:24:01,683 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[如何配置 翻译配置文件]添加 成功
+2019-07-24 16:24:01,963 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [上传服务器代码步骤]
+2019-07-24 16:24:02,426 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[上传服务器代码步骤]添加 成功
+2019-07-24 16:24:02,727 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [文件路径]
+2019-07-24 16:24:03,194 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[文件路径]添加 成功
+2019-07-24 16:24:03,506 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [同事公司邮件]
+2019-07-24 16:24:04,006 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[同事公司邮件]添加 成功
+2019-07-24 16:24:04,280 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Git上传]
+2019-07-24 16:24:04,707 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Git上传]添加 成功
+2019-07-24 16:24:04,987 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [注意]
+2019-07-24 16:24:05,441 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[注意]添加 成功
+2019-07-24 16:24:05,750 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [项目创建文件路径根据API]
+2019-07-24 16:24:06,273 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[项目创建文件路径根据API]添加 成功
+2019-07-24 16:24:06,546 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [新订单邮件]
+2019-07-24 16:24:08,469 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[新订单邮件]添加 成功
+2019-07-24 16:24:08,744 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [邮件对应代码段]
+2019-07-24 16:24:09,267 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[邮件对应代码段]添加 成功
+2019-07-24 16:24:09,579 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [项目文件]
+2019-07-24 16:24:10,056 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[项目文件]添加 成功
+2019-07-24 16:24:10,380 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [项目代码名词意义]
+2019-07-24 16:24:10,811 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[项目代码名词意义]添加 成功
+2019-07-24 16:24:11,115 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [阿里巴巴爬取商家名单]
+2019-07-24 16:24:11,539 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[阿里巴巴爬取商家名单]添加 成功
+2019-07-24 16:24:11,539 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [231f0999-9a87-4ff4-9d7c-7fa5f69c8b02], notebook [正则表达式]
+2019-07-24 16:24:12,180 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [正则学习资料]
+2019-07-24 16:24:12,625 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[正则学习资料]添加 成功
+2019-07-24 16:24:13,025 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [最实用的正则表达式整理]
+2019-07-24 16:24:13,539 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[最实用的正则表达式整理]添加 成功
+2019-07-24 16:24:13,842 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [一]
+2019-07-24 16:24:14,299 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[一]添加 成功
+2019-07-24 16:24:14,301 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [14c558c5-ff85-4cf7-985d-bcefc3357922], notebook [String]
+2019-07-24 16:24:14,944 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [字符串格式化]
+2019-07-24 16:24:15,391 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[字符串格式化]添加 成功
+2019-07-24 16:24:15,698 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [String.IsNullOrWhiteSpace()用法]
+2019-07-24 16:24:16,190 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[String.IsNullOrWhiteSpace()用法]添加 成功
+2019-07-24 16:24:16,499 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [String.Replace()]
+2019-07-24 16:24:16,957 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[String.Replace()]添加 成功
+2019-07-24 16:24:17,223 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [String.Format()用法]
+2019-07-24 16:24:17,711 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[String.Format()用法]添加 成功
+2019-07-24 16:24:17,711 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [288113f3-13c6-4895-ba9a-fbb19a2d3609], notebook [Path]
+2019-07-24 16:24:18,299 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [d450b58b-bd33-436f-a2a2-2474fa727957], notebook [Directory]
+2019-07-24 16:24:18,569 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [34678d6c-f68a-4a82-89e3-64b4e9ad0929], notebook [网站]
+2019-07-24 16:24:19,142 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [工具网站]
+2019-07-24 16:24:19,585 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[工具网站]添加 成功
+2019-07-24 16:24:19,894 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [博客网站：]
+2019-07-24 16:24:20,369 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[博客网站：]添加 成功
+2019-07-24 16:24:20,371 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [63eaa359-1678-4754-b0ab-b9e751269dab], notebook [HTML]
+2019-07-24 16:24:21,023 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [html 页面性能提升]
+2019-07-24 16:24:21,533 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[html 页面性能提升]添加 成功
+2019-07-24 16:24:21,838 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [html 预加载]
+2019-07-24 16:24:22,296 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[html 预加载]添加 成功
+2019-07-24 16:24:22,599 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [html 内嵌图片]
+2019-07-24 16:24:23,138 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[html 内嵌图片]添加 成功
+2019-07-24 16:24:23,138 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [09ad99ca-82a1-4569-89eb-64b0c528a672], notebook [运算符]
+2019-07-24 16:24:23,471 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [2b580ac0-f85e-449a-9fe2-90a3f3330582], notebook [计划]
+2019-07-24 16:24:24,130 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [每周计划]
+2019-07-24 16:24:24,555 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[每周计划]添加 成功
+2019-07-24 16:24:24,884 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [每天计划]
+2019-07-24 16:24:25,338 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[每天计划]添加 成功
+2019-07-24 16:24:25,648 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [每季计划]
+2019-07-24 16:24:26,180 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[每季计划]添加 成功
+2019-07-24 16:24:26,181 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [350d5f81-c7ed-4c76-8120-e97d8a5f18b4], notebook [邮件发送]
+2019-07-24 16:24:26,520 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [f6b6f677-bbe4-49c2-a7c4-175a5a258fb3], notebook [待完善笔记]
+2019-07-24 16:24:27,160 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Linq 的 ToDictionary()]
+2019-07-24 16:24:27,605 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Linq 的 ToDictionary()]添加 成功
+2019-07-24 16:24:27,934 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [list.Contains（）]
+2019-07-24 16:24:28,388 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[list.Contains（）]添加 成功
+2019-07-24 16:24:28,706 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [c# HttpWebResponse 调用WebApi]
+2019-07-24 16:24:29,186 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[c# HttpWebResponse 调用WebApi]添加 成功
+2019-07-24 16:24:29,549 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [C#邮件发送]
+2019-07-24 16:24:30,032 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[C#邮件发送]添加 成功
+2019-07-24 16:24:30,381 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [API请求]
+2019-07-24 16:24:30,808 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[API请求]添加 成功
+2019-07-24 16:24:31,128 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [HTML内嵌图片]
+2019-07-24 16:24:31,608 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[HTML内嵌图片]添加 成功
+2019-07-24 16:24:31,937 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [？各种运算符]
+2019-07-24 16:24:32,450 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[？各种运算符]添加 成功
+2019-07-24 16:24:32,732 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Path.GetFileNameWithoutExtension()]
+2019-07-24 16:24:33,234 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Path.GetFileNameWithoutExtension()]添加 成功
+2019-07-24 16:24:33,512 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Directory.GetFiles()]
+2019-07-24 16:24:33,983 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Directory.GetFiles()]添加 成功
+2019-07-24 16:24:34,283 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Path.GetFullPath()用法]
+2019-07-24 16:24:34,740 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Path.GetFullPath()用法]添加 成功
+2019-07-24 16:24:34,740 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [802e562e-3042-493f-86b4-e0a24b09a71b], notebook [VmallServer项目]
+2019-07-24 16:24:35,328 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Assistant流程]
+2019-07-24 16:24:35,776 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Assistant流程]添加 成功
+2019-07-24 16:24:35,789 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [333c3362-008b-425d-99da-ad28b99ef5a3], notebook [List]
+2019-07-24 16:24:36,059 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [366bc53d-b6fe-4978-ab0a-299446cc68ed], notebook [Linq]
+2019-07-24 16:24:36,365 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [994fb801-a5d0-451c-9e32-f2b1491f16a6], notebook [JS]
+2019-07-24 16:24:37,071 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [js实现input 联想]
+2019-07-24 16:24:38,459 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[js实现input 联想]添加 成功
+2019-07-24 16:24:38,805 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [daterangepicker js 时间控件]
+2019-07-24 16:24:39,260 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[daterangepicker js 时间控件]添加 成功
+2019-07-24 16:24:39,575 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [日期格式化函数]
+2019-07-24 16:24:40,131 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[日期格式化函数]添加 成功
+2019-07-24 16:24:40,479 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [echarts 商业级数据图表]
+2019-07-24 16:24:40,941 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[echarts 商业级数据图表]添加 成功
+2019-07-24 16:24:41,253 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Quill 轻量级富文本编辑器]
+2019-07-24 16:24:41,677 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Quill 轻量级富文本编辑器]添加 成功
+2019-07-24 16:24:42,009 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [纯JS实现Ajax]
+2019-07-24 16:24:42,505 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[纯JS实现Ajax]添加 成功
+2019-07-24 16:24:42,505 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [234fb518-2e07-4e81-951e-1b34aaf13e10], notebook [邮件Report]
+2019-07-24 16:24:43,043 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [营销邮件流程]
+2019-07-24 16:24:43,494 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[营销邮件流程]添加 成功
+2019-07-24 16:24:43,809 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [邮件模板]
+2019-07-24 16:24:44,289 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[邮件模板]添加 成功
+2019-07-24 16:24:44,572 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [发送订单邮件流程]
+2019-07-24 16:24:45,114 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[发送订单邮件流程]添加 成功
+2019-07-24 16:24:45,417 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [营销邮件配置]
+2019-07-24 16:24:45,855 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[营销邮件配置]添加 成功
+2019-07-24 16:24:45,855 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [2ef2f679-df7d-4f66-8b2e-d710eb0099e4], notebook [Mailchimp]
+2019-07-24 16:24:46,538 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Mailchimp账号]
+2019-07-24 16:24:47,095 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Mailchimp账号]添加 成功
+2019-07-24 16:24:47,411 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Mailchimp客户端图文教程]
+2019-07-24 16:25:09,385 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Mailchimp客户端图文教程]添加 成功
+2019-07-24 16:25:09,698 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Mailchimp问题]
+2019-07-24 16:25:10,176 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Mailchimp问题]添加 成功
+2019-07-24 16:25:10,463 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [18125072305@163.com yuike]
+2019-07-24 16:25:10,894 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[18125072305@163.com yuike]添加 成功
+2019-07-24 16:25:11,201 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [PPL7]JL)9JQSSSJV1]Q63}C.png]
+2019-07-24 16:25:12,686 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[PPL7]JL)9JQSSSJV1]Q63}C.png]添加 成功
+2019-07-24 16:25:13,323 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Mailchimp__API相关]
+2019-07-24 16:25:14,138 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Mailchimp__API相关]添加 成功
+2019-07-24 16:25:14,438 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [OAuth2.0相关]
+2019-07-24 16:25:14,875 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[OAuth2.0相关]添加 成功
+2019-07-24 16:25:15,207 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Mailchimp费用]
+2019-07-24 16:25:18,724 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Mailchimp费用]添加 成功
+2019-07-24 16:25:18,726 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [bd37bb30-2df9-49ca-a567-a21e242f1803], notebook [优客需求]
+2019-07-24 16:25:19,423 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [任务0225]
+2019-07-24 16:25:19,868 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[任务0225]添加 成功
+2019-07-24 16:25:20,394 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [任务1029]
+2019-07-24 16:25:21,766 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[任务1029]添加 成功
+2019-07-24 16:25:22,296 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [需求0822]
+2019-07-24 16:25:22,880 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[需求0822]添加 成功
+2019-07-24 16:25:23,280 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [需求1008]
+2019-07-24 16:25:23,802 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[需求1008]添加 成功
+2019-07-24 16:25:24,161 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [任务1022]
+2019-07-24 16:25:24,645 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[任务1022]添加 成功
+2019-07-24 16:25:25,035 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [需求0806]
+2019-07-24 16:25:26,266 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[需求0806]添加 成功
+2019-07-24 16:25:26,710 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [需求0718]
+2019-07-24 16:25:27,943 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[需求0718]添加 成功
+2019-07-24 16:25:28,273 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [需求0627]
+2019-07-24 16:25:28,792 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[需求0627]添加 成功
+2019-07-24 16:25:29,331 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [需求0617]
+2019-07-24 16:25:31,115 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[需求0617]添加 成功
+2019-07-24 16:25:31,529 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [需求0610]
+2019-07-24 16:25:32,177 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[需求0610]添加 成功
+2019-07-24 16:25:32,470 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [需求0530]
+2019-07-24 16:25:32,976 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[需求0530]添加 成功
+2019-07-24 16:25:33,338 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [需求]
+2019-07-24 16:25:34,492 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[需求]添加 成功
+2019-07-24 16:25:34,848 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [需求0521]
+2019-07-24 16:25:37,476 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[需求0521]添加 成功
+2019-07-24 16:25:37,871 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [需求0427]
+2019-07-24 16:25:41,842 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[需求0427]添加 成功
+2019-07-24 16:25:41,842 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [ea969033-82e3-45b4-a576-c0ac0c5d3acb], notebook [CSS]
+2019-07-24 16:25:42,605 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [css 动画]
+2019-07-24 16:25:43,111 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[css 动画]添加 成功
+2019-07-24 16:25:44,897 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [一、骰子的布局]
+2019-07-24 16:25:55,440 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[一、骰子的布局]添加 成功
+2019-07-24 16:25:55,845 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [CSS_Flex布局]
+2019-07-24 16:25:59,470 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:180] - INFO: valid failed
+2019-07-24 16:25:59,470 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:180] - INFO: valid failed
+2019-07-24 16:26:00,891 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[CSS_Flex布局]添加 成功
+2019-07-24 16:26:01,164 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [提升网页请求性能]
+2019-07-24 16:26:01,595 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[提升网页请求性能]添加 成功
+2019-07-24 16:26:02,154 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Flexbox 布局的最简单表单]
+2019-07-24 16:26:05,134 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Flexbox 布局的最简单表单]添加 成功
+2019-07-24 16:26:05,615 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Jqprint]
+2019-07-24 16:26:06,240 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Jqprint]添加 成功
+2019-07-24 16:26:06,927 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [WScript.Shell启用本地程序]
+2019-07-24 16:26:08,318 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[WScript.Shell启用本地程序]添加 成功
+2019-07-24 16:26:08,318 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [72c4605c-1da5-47f7-885c-9aed2614686a], notebook [Asp.Net]
+2019-07-24 16:26:08,938 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Web.Config 报错]
+2019-07-24 16:26:09,404 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Web.Config 报错]添加 成功
+2019-07-24 16:26:09,770 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Asp.net GridView 增删查基本使用方法]
+2019-07-24 16:26:10,325 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Asp.net GridView 增删查基本使用方法]添加 成功
+2019-07-24 16:26:10,622 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [http 重定向https]
+2019-07-24 16:26:11,151 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[http 重定向https]添加 成功
+2019-07-24 16:26:11,466 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [List 集合去重 Distinct()]
+2019-07-24 16:26:11,963 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[List 集合去重 Distinct()]添加 成功
+2019-07-24 16:26:12,316 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [后台获取前台checkbox的值]
+2019-07-24 16:26:12,750 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[后台获取前台checkbox的值]添加 成功
+2019-07-24 16:26:13,089 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [JS修改服务端控件后，在服务端取值 .]
+2019-07-24 16:26:13,555 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[JS修改服务端控件后，在服务端取值 .]添加 成功
+2019-07-24 16:26:13,869 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [前后台方法调用]
+2019-07-24 16:26:14,388 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[前后台方法调用]添加 成功
+2019-07-24 16:26:14,388 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [b6a5f9c7-3092-451c-b73b-c626279a5e3f], notebook [Lodop]
+2019-07-24 16:26:15,723 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Lodop详细参数]
+2019-07-24 16:26:16,502 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Lodop详细参数]添加 成功
+2019-07-24 16:26:16,943 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Lodop使用]
+2019-07-24 16:26:17,546 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Lodop使用]添加 成功
+2019-07-24 16:26:17,974 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [LODOP方法小结]
+2019-07-24 16:26:18,520 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[LODOP方法小结]添加 成功
+2019-07-24 16:26:18,520 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [d40ad245-a870-447b-abd1-534429699de0], notebook [DataTime]
+2019-07-24 16:26:19,108 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [各国时间]
+2019-07-24 16:26:19,591 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[各国时间]添加 成功
+2019-07-24 16:26:19,592 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [3e1e25a0-f079-498e-87fb-6ec281cbc82b], notebook [PHP基础]
+2019-07-24 16:26:20,193 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [thinkphp5.0]
+2019-07-24 16:26:20,750 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[thinkphp5.0]添加 成功
+2019-07-24 16:26:21,049 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Laravel]
+2019-07-24 16:26:21,503 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Laravel]添加 成功
+2019-07-24 16:26:21,790 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [基础方法]
+2019-07-24 16:26:22,326 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[基础方法]添加 成功
+2019-07-24 16:26:22,326 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [f434c3fd-f771-4c2f-a02d-e0d1f0c6d4d8], notebook [生活记录]
+2019-07-24 16:26:22,948 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [国庆旅游计划]
+2019-07-24 16:26:23,453 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[国庆旅游计划]添加 成功
+2019-07-24 16:26:23,766 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [第一封情书]
+2019-07-24 16:26:24,237 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[第一封情书]添加 成功
+2019-07-24 16:26:24,237 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [e4c7c2e4-6de4-4049-b89e-3ea455c2b990], notebook [泛型]
+2019-07-24 16:26:24,839 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [where（泛型类型约束）https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/k]
+2019-07-24 16:26:25,321 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[where（泛型类型约束）https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/k]添加 成功
+2019-07-24 16:26:25,321 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [1e27af6b-6cf2-4910-ae79-2002fb9d2990], notebook [win10]
+2019-07-24 16:26:26,033 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [VMware 虚拟机安装 macOS 10.14 教程（黑苹果）]
+2019-07-24 16:26:36,936 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[VMware 虚拟机安装 macOS 10.14 教程（黑苹果）]添加 成功
+2019-07-24 16:26:37,247 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Windos安装MySql+Workbench]
+2019-07-24 16:26:37,723 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Windos安装MySql+Workbench]添加 成功
+2019-07-24 16:26:38,017 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [win10 github +jekyll实现bolg]
+2019-07-24 16:26:38,516 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:180] - INFO: valid failed
+2019-07-24 16:26:38,516 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:180] - INFO: valid failed
+2019-07-24 16:26:39,030 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[win10 github +jekyll实现bolg]添加 成功
+2019-07-24 16:26:39,572 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [win10 github+hexo 实现bolg]
+2019-07-24 16:26:44,141 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[win10 github+hexo 实现bolg]添加 成功
+2019-07-24 16:26:44,448 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [win10 安装Node.js]
+2019-07-24 16:26:45,621 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[win10 安装Node.js]添加 成功
+2019-07-24 16:26:45,957 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [TortoiseGit（小乌龟）创建版本库]
+2019-07-24 16:26:47,312 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[TortoiseGit（小乌龟）创建版本库]添加 成功
+2019-07-24 16:26:47,651 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [安装git 小乌报错]
+2019-07-24 16:26:48,155 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[安装git 小乌报错]添加 成功
+2019-07-24 16:26:48,450 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Win10ftp服务器搭建]
+2019-07-24 16:26:48,881 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Win10ftp服务器搭建]添加 成功
+2019-07-24 16:26:48,881 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [52c0fa40-3b5b-4317-bf88-856c68c1e1e5], notebook [游戏]
+2019-07-24 16:26:49,487 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [鬼泣5免安装绿色中文版（包含全部DLC）]
+2019-07-24 16:26:49,963 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[鬼泣5免安装绿色中文版（包含全部DLC）]添加 成功
+2019-07-24 16:26:50,322 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [中土世界：战争之影破解资源附带安装视频]
+2019-07-24 16:26:50,756 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[中土世界：战争之影破解资源附带安装视频]添加 成功
+2019-07-24 16:26:50,756 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [d1b56614-fbf0-4737-b75f-9e98d3272bd7], notebook [日常备忘]
+2019-07-24 16:26:51,368 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [面试]
+2019-07-24 16:26:55,378 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[面试]添加 成功
+2019-07-24 16:26:55,697 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [电话号码更换]
+2019-07-24 16:26:56,200 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[电话号码更换]添加 成功
+2019-07-24 16:26:56,200 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [9225885f-4c61-4939-ab65-72071b1fdfa9], notebook [Echaohuo]
+2019-07-24 16:26:56,877 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [货币表]
+2019-07-24 16:26:57,329 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[货币表]添加 成功
+2019-07-24 16:26:57,329 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [997c9022-36cb-48bf-adf6-7bec377f77ba], notebook [环境安装]
+2019-07-24 16:26:57,947 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [python 二进制转化图片]
+2019-07-24 16:26:58,403 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[python 二进制转化图片]添加 成功
+2019-07-24 16:26:58,703 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [切换pip 数据源]
+2019-07-24 16:27:00,009 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[切换pip 数据源]添加 成功
+2019-07-24 16:27:00,285 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Python包管理工具setuptools之setup函数参数详解(https://www.cnblogs.com/potato-chip/p/9106225.]
+2019-07-24 16:27:00,707 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Python包管理工具setuptools之setup函数参数详解(https://www.cnblogs.com/potato-chip/p/9106225.]添加 成功
+2019-07-24 16:27:00,973 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [使用Anaconda安装python 2.7和3.7 版本]
+2019-07-24 16:27:03,733 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[使用Anaconda安装python 2.7和3.7 版本]添加 成功
+2019-07-24 16:27:04,032 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [win10 同时安装python2.7和python3.7]
+2019-07-24 16:27:04,487 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[win10 同时安装python2.7和python3.7]添加 成功
+2019-07-24 16:27:04,487 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [f98f2a76-2bdf-4865-b649-b10466f37607], notebook [Install]
+2019-07-24 16:27:05,223 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [CentOs 创建 ftp]
+2019-07-24 16:27:05,703 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[CentOs 创建 ftp]添加 成功
+2019-07-24 16:27:06,448 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [centos7+mysql+php]
+2019-07-24 16:27:10,523 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[centos7+mysql+php]添加 成功
+2019-07-24 16:27:10,923 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [win10+ VMware Workstations+CentOS7安装]
+2019-07-24 16:27:29,770 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[win10+ VMware Workstations+CentOS7安装]添加 成功
+2019-07-24 16:27:30,075 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Sudo是linux系统中，非root权限的用户提升自己权限来执行某些特性命令的方式，它使普通用户在不知道超级用户的密码的情况下，也可以暂时的获得root权限。]
+2019-07-24 16:27:30,545 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Sudo是linux系统中，非root权限的用户提升自己权限来执行某些特性命令的方式，它使普通用户在不知道超级用户的密码的情况下，也可以暂时的获得root权限。]添加 成功
+2019-07-24 16:27:30,884 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [centos7 git+码云安装]
+2019-07-24 16:27:31,451 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[centos7 git+码云安装]添加 成功
+2019-07-24 16:27:31,763 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Centos 7 安装图像界面]
+2019-07-24 16:27:36,413 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Centos 7 安装图像界面]添加 成功
+2019-07-24 16:27:36,691 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [centos7+nginx+php7搭建laravel]
+2019-07-24 16:27:38,683 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[centos7+nginx+php7搭建laravel]添加 成功
+2019-07-24 16:27:38,765 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [bb271cb1-eafb-400f-a219-08142102ed92], notebook [其他]
+2019-07-24 16:27:39,338 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [如何在本机搭建外网可以访问的服务器]
+2019-07-24 16:27:42,625 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[如何在本机搭建外网可以访问的服务器]添加 成功
+2019-07-24 16:27:42,625 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [9e6f04e6-9da5-46da-9a44-54e475a90d9c], notebook [Command]
+2019-07-24 16:27:43,233 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Centos 文件操作]
+2019-07-24 16:27:43,716 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Centos 文件操作]添加 成功
+2019-07-24 16:27:44,023 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [CentOS7防火墙（firewalld）的基本使用]
+2019-07-24 16:27:44,493 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[CentOS7防火墙（firewalld）的基本使用]添加 成功
+2019-07-24 16:27:44,832 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Centos vi编辑命令]
+2019-07-24 16:27:45,296 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Centos vi编辑命令]添加 成功
+2019-07-24 16:27:45,296 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [26551fe4-7b06-4b03-8aa6-eb23e757e3b3], notebook [deploy]
+2019-07-24 16:27:45,993 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [部署 Centos7 + nginx+python]
+2019-07-24 16:27:55,703 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[部署 Centos7 + nginx+python]添加 成功
+2019-07-24 16:27:55,984 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Centos7 Python 开发环境配置（pyenv+virtualenv）]
+2019-07-24 16:27:56,490 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Centos7 Python 开发环境配置（pyenv+virtualenv）]添加 成功
+2019-07-24 16:27:56,802 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Centos7 python 2和python3 共存]
+2019-07-24 16:27:58,665 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Centos7 python 2和python3 共存]添加 成功
+2019-07-24 16:27:59,005 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [部署Centos7+nginx+php]
+2019-07-24 16:27:59,476 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[部署Centos7+nginx+php]添加 成功
+2019-07-24 16:27:59,476 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [55b83f7a-b789-4d9f-b100-36c5171e386d], notebook [.net core]
+2019-07-24 16:28:00,125 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [.Net Core 如何使用读取配置文件（jason,xml,config）]
+2019-07-24 16:28:00,605 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[.Net Core 如何使用读取配置文件（jason,xml,config）]添加 成功
+2019-07-24 16:28:00,921 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [.Net Core控制台程序生产exe]
+2019-07-24 16:28:01,367 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[.Net Core控制台程序生产exe]添加 成功
+2019-07-24 16:28:01,704 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [windows 上编译.net core  的其他平台的目标程序]
+2019-07-24 16:28:02,184 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[windows 上编译.net core  的其他平台的目标程序]添加 成功
+2019-07-24 16:28:02,186 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [5939e6f3-ac6e-480b-9bc9-c876bffc3420], notebook [生活]
+2019-07-24 16:28:02,937 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [账号密码]
+2019-07-24 16:28:03,506 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[账号密码]添加 成功
+2019-07-24 16:28:03,848 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [个人公众号开发]
+2019-07-24 16:28:04,326 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[个人公众号开发]添加 成功
+2019-07-24 16:28:04,634 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [姐姐的ppt]
+2019-07-24 16:28:05,164 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[姐姐的ppt]添加 成功
+2019-07-24 16:28:05,595 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [My Blog]
+2019-07-24 16:28:06,197 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[My Blog]添加 成功
+2019-07-24 16:28:06,509 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [计划]
+2019-07-24 16:28:07,026 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[计划]添加 成功
+2019-07-24 16:28:07,334 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [面试遇到的问题]
+2019-07-24 16:28:07,857 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[面试遇到的问题]添加 成功
+2019-07-24 16:28:07,857 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [7a72cf23-7e63-4440-a9b8-e2a98801dc58], notebook [优客工作交接]
+2019-07-24 16:28:08,611 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [echaohuo_api调试+发布]
+2019-07-24 16:28:09,194 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[echaohuo_api调试+发布]添加 成功
+2019-07-24 16:28:09,526 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [相关账号]
+2019-07-24 16:28:10,180 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[相关账号]添加 成功
+2019-07-24 16:28:10,546 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [echaohuo商务后台调试+发布]
+2019-07-24 16:28:11,121 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[echaohuo商务后台调试+发布]添加 成功
+2019-07-24 16:28:11,483 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [valashop商务后台调试+发布]
+2019-07-24 16:28:12,022 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[valashop商务后台调试+发布]添加 成功
+2019-07-24 16:28:12,022 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [f4bba7fc-40ca-4b59-a98e-851cc848e78e], notebook [VS]
+2019-07-24 16:28:12,654 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [vs 2017 ,net 智能提示的英文改为中文]
+2019-07-24 16:28:13,155 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[vs 2017 ,net 智能提示的英文改为中文]添加 成功
+2019-07-24 16:28:13,430 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [VS 打包]
+2019-07-24 16:28:13,884 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[VS 打包]添加 成功
+2019-07-24 16:28:14,187 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [ReSharper插件破解+安装（windows）]
+2019-07-24 16:28:18,329 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[ReSharper插件破解+安装（windows）]添加 成功
+2019-07-24 16:28:18,730 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [VS 2015 快捷键]
+2019-07-24 16:28:19,329 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[VS 2015 快捷键]添加 成功
+2019-07-24 16:28:19,615 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Vs 插件]
+2019-07-24 16:28:20,124 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Vs 插件]添加 成功
+2019-07-24 16:28:20,124 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [ee278e1f-e26d-4239-a8eb-c51d5b9d850c], notebook [SQLServer]
+2019-07-24 16:28:20,707 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [存储过程语法]
+2019-07-24 16:28:21,176 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[存储过程语法]添加 成功
+2019-07-24 16:28:21,453 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [创建数据库，表，外键]
+2019-07-24 16:28:21,944 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[创建数据库，表，外键]添加 成功
+2019-07-24 16:28:21,944 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [3740954d-ff65-4809-83d3-cb4ce90fe178], notebook [基础]
+2019-07-24 16:28:22,538 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [多态]
+2019-07-24 16:28:22,989 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[多态]添加 成功
+2019-07-24 16:28:23,256 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [封箱和拆箱]
+2019-07-24 16:28:23,690 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[封箱和拆箱]添加 成功
+2019-07-24 16:28:23,963 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [值类型与引用类型 https://www.cnblogs.com/bakuhert/articles/5878086.html]
+2019-07-24 16:28:24,433 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[值类型与引用类型 https://www.cnblogs.com/bakuhert/articles/5878086.html]添加 成功
+2019-07-24 16:28:24,433 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [4278f038-a19b-46cd-aec3-65274a4dba1d], notebook [MVC]
+2019-07-24 16:28:25,005 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Asp.net MVC EF各版本区别]
+2019-07-24 16:28:25,463 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Asp.net MVC EF各版本区别]添加 成功
+2019-07-24 16:28:25,543 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [914b828f-ef0f-4826-b0ff-65065ee3bc29], notebook [来自小程序「印象笔记」]
+2019-07-24 16:28:26,127 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [中银微信开发]
+2019-07-24 16:28:26,618 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[中银微信开发]添加 成功
+2019-07-24 16:28:26,890 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [酒店项目总结:]
+2019-07-24 16:28:27,351 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[酒店项目总结:]添加 成功
+2019-07-24 16:28:27,351 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [d1bbd316-ca3c-446c-bf96-2e450bb51d1a], notebook [思达普工作需求]
+2019-07-24 16:28:28,038 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [酒店项目]
+2019-07-24 16:28:29,473 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[酒店项目]添加 成功
+2019-07-24 16:28:29,780 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [分行政务微信二次开发方案]
+2019-07-24 16:28:41,292 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[分行政务微信二次开发方案]添加 成功
+2019-07-24 16:28:41,601 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [公司内部系统 匿名建议功能]
+2019-07-24 16:28:42,128 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[公司内部系统 匿名建议功能]添加 成功
+2019-07-24 16:28:42,130 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [0085d498-501f-4ab9-8301-d527d34dd6c2], notebook [设计理念]
+2019-07-24 16:28:42,842 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [降低复杂性]
+2019-07-24 16:28:43,303 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[降低复杂性]添加 成功
+2019-07-24 16:28:43,303 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [97c8cb76-6fee-455a-888f-962cb28205ed], notebook [Bootstrap]
+2019-07-24 16:28:43,940 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Tooltip提示工具]
+2019-07-24 16:28:44,401 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Tooltip提示工具]添加 成功
+2019-07-24 16:28:44,403 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [1505f73e-9f00-4898-8cfb-8af417ab3d66], notebook [Mysql]
+2019-07-24 16:28:45,094 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [mysql 创建新用户]
+2019-07-24 16:28:45,602 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[mysql 创建新用户]添加 成功
+2019-07-24 16:28:45,911 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [解除安全更新模式]
+2019-07-24 16:28:46,381 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[解除安全更新模式]添加 成功
+2019-07-24 16:28:46,381 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [d12b672a-cca9-4f1c-9d7f-5ce7bcea05b2], notebook [C#其他]
+2019-07-24 16:28:47,022 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [C# 多线程文件读写]
+2019-07-24 16:28:47,457 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[C# 多线程文件读写]添加 成功
+2019-07-24 16:28:47,996 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [C# http post 文件传输]
+2019-07-24 16:28:48,599 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[C# http post 文件传输]添加 成功
+2019-07-24 16:28:48,976 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [Nlog 记录日志]
+2019-07-24 16:28:49,503 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[Nlog 记录日志]添加 成功
+2019-07-24 16:28:50,040 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [C# 实现PDF转换Excel]
+2019-07-24 16:28:51,882 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[C# 实现PDF转换Excel]添加 成功
+2019-07-24 16:28:51,882 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [c0df815d-f272-4cc4-8ed1-7f7dc154cea7], notebook [思达普工作总结]
+2019-07-24 16:28:52,470 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [酒店客录系统总结]
+2019-07-24 16:28:52,951 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[酒店客录系统总结]添加 成功
+2019-07-24 16:28:53,220 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [酒店管理数据总结]
+2019-07-24 16:28:53,706 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[酒店管理数据总结]添加 成功
+2019-07-24 16:28:53,706 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [5beb41c8-bcfe-4130-b1c1-6ebdc0e225e1], notebook [微信开发]
+2019-07-24 16:28:54,582 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [C#微信测试公众号开发]
+2019-07-24 16:28:57,311 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[C#微信测试公众号开发]添加 成功
+2019-07-24 16:28:57,997 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [公众号开发教程]
+2019-07-24 16:28:59,566 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[公众号开发教程]添加 成功
+2019-07-24 16:28:59,568 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [9f346046-09e6-4ce1-a260-2008cb97a22c], notebook [Http]
+2019-07-24 16:29:00,288 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [发送http请求 Content-Type  互联网媒体类型]
+2019-07-24 16:29:00,763 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[发送http请求 Content-Type  互联网媒体类型]添加 成功
+2019-07-24 16:29:00,845 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [c0709ab2-cc9a-4b04-aedb-28127e83f545], notebook [XMind]
+2019-07-24 16:29:01,546 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [asp.net core mvc+python+evernote博客]
+2019-07-24 16:29:03,614 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[asp.net core mvc+python+evernote博客]添加 成功
+2019-07-24 16:29:03,967 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [asp.net core mvc+python+evernote博客]
+2019-07-24 16:29:05,674 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[asp.net core mvc+python+evernote博客]添加 成功
+2019-07-24 16:29:06,032 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [酒店客录系统数据库]
+2019-07-24 16:29:08,091 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[酒店客录系统数据库]添加 成功
+2019-07-24 16:29:08,459 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [酒店客录系统功能概述]
+2019-07-24 16:29:11,338 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[酒店客录系统功能概述]添加 成功
+2019-07-24 16:29:11,640 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [酒店客录系统优化1.0]
+2019-07-24 16:29:13,792 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:180] - INFO: valid failed
+2019-07-24 16:29:14,177 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:180] - INFO: valid failed
+2019-07-24 16:29:14,670 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[酒店客录系统优化1.0]添加 成功
+2019-07-24 16:29:15,095 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [酒店数据管理优化开发]
+2019-07-24 16:29:18,078 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:180] - INFO: valid failed
+2019-07-24 16:29:19,210 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[酒店数据管理优化开发]添加 成功
+2019-07-24 16:29:19,548 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [个人公众平台开发]
+2019-07-24 16:29:20,986 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[个人公众平台开发]添加 成功
+2019-07-24 16:29:21,286 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [“蓉荟贯通”公众号开发]
+2019-07-24 16:29:22,930 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:180] - INFO: valid failed
+2019-07-24 16:29:23,835 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[“蓉荟贯通”公众号开发]添加 成功
+2019-07-24 16:29:23,835 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [bc2bdd5f-8e80-4cfb-93f0-260716c8d1cc], notebook [爬虫]
+2019-07-24 16:29:24,480 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [python Requests爬虫库]
+2019-07-24 16:29:24,931 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[python Requests爬虫库]添加 成功
+2019-07-24 16:29:24,931 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [f36359b9-2592-46f1-90f5-b8661c3653bf], notebook [开发]
+2019-07-24 16:29:25,627 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [asp .Net core mvc+python + evernote 实现个人博客]
+2019-07-24 16:29:28,313 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[asp .Net core mvc+python + evernote 实现个人博客]添加 成功
+2019-07-24 16:29:28,315 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [083addaa-26e5-4380-9f0a-82eb32622fc2], notebook [VSCode]
+2019-07-24 16:29:28,969 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [vscode写python时的代码错误提醒和自动格式化]
+2019-07-24 16:29:36,851 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[vscode写python时的代码错误提醒和自动格式化]添加 成功
+2019-07-24 16:29:37,157 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [VSCode 开发python +调试]
+2019-07-24 16:29:39,219 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[VSCode 开发python +调试]添加 成功
+2019-07-24 16:29:39,220 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [6a1e7487-63d3-49ba-aadb-fa52d3040dcb], notebook [CSDN]
+2019-07-24 16:29:39,858 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [csdn链接]
+2019-07-24 16:29:40,342 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[csdn链接]添加 成功
+2019-07-24 16:29:40,342 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [7a9f7dd5-e6be-4736-abae-f39d7275fb80], notebook [Jquery]
+2019-07-24 16:29:40,924 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [JQuery的父、子、兄弟节点查找方法]
+2019-07-24 16:29:41,369 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[JQuery的父、子、兄弟节点查找方法]添加 成功
+2019-07-24 16:29:41,451 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [53ada850-773a-4449-b376-77d329cb4ea0], notebook [software]
+2019-07-24 16:29:42,075 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [XMind 8 同步思维导图到 evernote]
+2019-07-24 16:29:43,671 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[XMind 8 同步思维导图到 evernote]添加 成功
+2019-07-24 16:29:43,954 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [XMind 8 破解为XMindPro]
+2019-07-24 16:29:45,263 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[XMind 8 破解为XMindPro]添加 成功
+2019-07-24 16:29:45,562 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [win10激活]
+2019-07-24 16:29:46,690 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[win10激活]添加 成功
+2019-07-24 16:29:46,986 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [VMware1.4虚拟机激活密钥]
+2019-07-24 16:29:47,457 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[VMware1.4虚拟机激活密钥]添加 成功
+2019-07-24 16:29:47,459 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [37ccd7b1-117a-4189-85f7-7520a3162c81], notebook [思达普工作交接]
+2019-07-24 16:29:48,213 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [酒店相关交接]
+2019-07-24 16:29:51,608 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[酒店相关交接]添加 成功
+2019-07-24 16:29:51,954 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [相关账号密码]
+2019-07-24 16:29:52,421 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[相关账号密码]添加 成功
+2019-07-24 16:29:52,743 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [中银微信开发交接]
+2019-07-24 16:29:55,789 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[中银微信开发交接]添加 成功
+2019-07-24 16:29:55,789 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [c2133fe9-8379-4195-86eb-deaa7b60cbd3], notebook [PyCharm]
+2019-07-24 16:29:56,733 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [PyCharm快捷键大全]
+2019-07-24 16:29:57,450 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[PyCharm快捷键大全]添加 成功
+2019-07-24 16:29:57,799 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:273] - INFO: 添加笔记: [PyCharm 安装+破解]
+2019-07-24 16:30:00,200 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:326] - INFO: 笔记[PyCharm 安装+破解]添加 成功
+2019-07-24 17:34:39,648 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:75] - INFO: 开始更新笔记: 20190724（周三）
+2019-07-24 17:34:41,878 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:225] - INFO: Found 59 notebooks
+2019-07-24 17:34:41,878 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [52d3ba71-70fd-4da5-9cfc-0eaefe64e5fe], notebook [工作]
+2019-07-24 17:34:42,244 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [231f0999-9a87-4ff4-9d7c-7fa5f69c8b02], notebook [正则表达式]
+2019-07-24 17:34:42,605 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [14c558c5-ff85-4cf7-985d-bcefc3357922], notebook [String]
+2019-07-24 17:34:42,936 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [288113f3-13c6-4895-ba9a-fbb19a2d3609], notebook [Path]
+2019-07-24 17:34:43,266 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [d450b58b-bd33-436f-a2a2-2474fa727957], notebook [Directory]
+2019-07-24 17:34:43,605 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [34678d6c-f68a-4a82-89e3-64b4e9ad0929], notebook [网站]
+2019-07-24 17:34:43,920 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [63eaa359-1678-4754-b0ab-b9e751269dab], notebook [HTML]
+2019-07-24 17:34:44,282 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [09ad99ca-82a1-4569-89eb-64b0c528a672], notebook [运算符]
+2019-07-24 17:34:44,617 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [2b580ac0-f85e-449a-9fe2-90a3f3330582], notebook [计划]
+2019-07-24 17:34:44,928 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [350d5f81-c7ed-4c76-8120-e97d8a5f18b4], notebook [邮件发送]
+2019-07-24 17:34:45,240 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [f6b6f677-bbe4-49c2-a7c4-175a5a258fb3], notebook [待完善笔记]
+2019-07-24 17:34:45,612 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [802e562e-3042-493f-86b4-e0a24b09a71b], notebook [VmallServer项目]
+2019-07-24 17:34:45,921 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [333c3362-008b-425d-99da-ad28b99ef5a3], notebook [List]
+2019-07-24 17:34:46,221 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [366bc53d-b6fe-4978-ab0a-299446cc68ed], notebook [Linq]
+2019-07-24 17:34:46,571 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [994fb801-a5d0-451c-9e32-f2b1491f16a6], notebook [JS]
+2019-07-24 17:34:46,931 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [234fb518-2e07-4e81-951e-1b34aaf13e10], notebook [邮件Report]
+2019-07-24 17:34:47,237 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [2ef2f679-df7d-4f66-8b2e-d710eb0099e4], notebook [Mailchimp]
+2019-07-24 17:34:47,617 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [bd37bb30-2df9-49ca-a567-a21e242f1803], notebook [优客需求]
+2019-07-24 17:34:47,984 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [ea969033-82e3-45b4-a576-c0ac0c5d3acb], notebook [CSS]
+2019-07-24 17:34:48,394 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [72c4605c-1da5-47f7-885c-9aed2614686a], notebook [Asp.Net]
+2019-07-24 17:34:48,693 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [b6a5f9c7-3092-451c-b73b-c626279a5e3f], notebook [Lodop]
+2019-07-24 17:34:49,012 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [d40ad245-a870-447b-abd1-534429699de0], notebook [DataTime]
+2019-07-24 17:34:49,282 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [3e1e25a0-f079-498e-87fb-6ec281cbc82b], notebook [PHP基础]
+2019-07-24 17:34:49,596 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [f434c3fd-f771-4c2f-a02d-e0d1f0c6d4d8], notebook [生活记录]
+2019-07-24 17:34:49,905 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [e4c7c2e4-6de4-4049-b89e-3ea455c2b990], notebook [泛型]
+2019-07-24 17:34:50,236 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [1e27af6b-6cf2-4910-ae79-2002fb9d2990], notebook [win10]
+2019-07-24 17:34:50,596 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [52c0fa40-3b5b-4317-bf88-856c68c1e1e5], notebook [游戏]
+2019-07-24 17:34:50,875 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [d1b56614-fbf0-4737-b75f-9e98d3272bd7], notebook [日常备忘]
+2019-07-24 17:34:51,193 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [9225885f-4c61-4939-ab65-72071b1fdfa9], notebook [Echaohuo]
+2019-07-24 17:34:51,464 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [997c9022-36cb-48bf-adf6-7bec377f77ba], notebook [环境安装]
+2019-07-24 17:34:51,767 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [f98f2a76-2bdf-4865-b649-b10466f37607], notebook [Install]
+2019-07-24 17:34:52,315 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [bb271cb1-eafb-400f-a219-08142102ed92], notebook [其他]
+2019-07-24 17:34:52,628 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [9e6f04e6-9da5-46da-9a44-54e475a90d9c], notebook [Command]
+2019-07-24 17:34:52,903 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [26551fe4-7b06-4b03-8aa6-eb23e757e3b3], notebook [deploy]
+2019-07-24 17:34:53,240 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [55b83f7a-b789-4d9f-b100-36c5171e386d], notebook [.net core]
+2019-07-24 17:34:53,589 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [5939e6f3-ac6e-480b-9bc9-c876bffc3420], notebook [生活]
+2019-07-24 17:34:53,930 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [7a72cf23-7e63-4440-a9b8-e2a98801dc58], notebook [优客工作交接]
+2019-07-24 17:34:54,239 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [f4bba7fc-40ca-4b59-a98e-851cc848e78e], notebook [VS]
+2019-07-24 17:34:54,604 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [ee278e1f-e26d-4239-a8eb-c51d5b9d850c], notebook [SQLServer]
+2019-07-24 17:34:54,921 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [3740954d-ff65-4809-83d3-cb4ce90fe178], notebook [基础]
+2019-07-24 17:34:55,263 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [4278f038-a19b-46cd-aec3-65274a4dba1d], notebook [MVC]
+2019-07-24 17:34:55,678 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [914b828f-ef0f-4826-b0ff-65065ee3bc29], notebook [来自小程序「印象笔记」]
+2019-07-24 17:34:56,016 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [d1bbd316-ca3c-446c-bf96-2e450bb51d1a], notebook [思达普工作需求]
+2019-07-24 17:34:56,398 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [0085d498-501f-4ab9-8301-d527d34dd6c2], notebook [设计理念]
+2019-07-24 17:34:56,799 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [97c8cb76-6fee-455a-888f-962cb28205ed], notebook [Bootstrap]
+2019-07-24 17:34:57,127 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [1505f73e-9f00-4898-8cfb-8af417ab3d66], notebook [Mysql]
+2019-07-24 17:34:57,453 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [d12b672a-cca9-4f1c-9d7f-5ce7bcea05b2], notebook [C#其他]
+2019-07-24 17:34:57,782 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [c0df815d-f272-4cc4-8ed1-7f7dc154cea7], notebook [思达普工作总结]
+2019-07-24 17:34:58,073 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [5beb41c8-bcfe-4130-b1c1-6ebdc0e225e1], notebook [微信开发]
+2019-07-24 17:34:58,391 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [9f346046-09e6-4ce1-a260-2008cb97a22c], notebook [Http]
+2019-07-24 17:34:58,786 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [c0709ab2-cc9a-4b04-aedb-28127e83f545], notebook [XMind]
+2019-07-24 17:34:59,154 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [bc2bdd5f-8e80-4cfb-93f0-260716c8d1cc], notebook [爬虫]
+2019-07-24 17:34:59,450 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [f36359b9-2592-46f1-90f5-b8661c3653bf], notebook [开发]
+2019-07-24 17:34:59,828 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [083addaa-26e5-4380-9f0a-82eb32622fc2], notebook [VSCode]
+2019-07-24 17:35:00,151 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [6a1e7487-63d3-49ba-aadb-fa52d3040dcb], notebook [CSDN]
+2019-07-24 17:35:00,471 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [7a9f7dd5-e6be-4736-abae-f39d7275fb80], notebook [Jquery]
+2019-07-24 17:35:00,852 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [53ada850-773a-4449-b376-77d329cb4ea0], notebook [software]
+2019-07-24 17:35:01,148 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [37ccd7b1-117a-4189-85f7-7520a3162c81], notebook [思达普工作交接]
+2019-07-24 17:35:01,474 - D:/My/Code/application/asp.net core mvc python evernote/auto_get_evernote.py[line:239] - INFO: guid: [c2133fe9-8379-4195-86eb-deaa7b60cbd3], notebook [PyCharm]

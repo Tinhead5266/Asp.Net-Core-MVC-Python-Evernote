@@ -26,11 +26,12 @@ logging.basicConfig(level=logging.DEBUG,
 - diary_template_name：日记模板名称，请保证有且仅有一个标题为这个的笔记
 - diary_notebook_name：复制生成的笔记要放入哪个笔记本，填写笔记本名称
 """
-# 创建存放图片的文件夹
-note_images_path = os.getcwd() + '\\note_images'
-note_images_path = note_images_path.strip().rstrip("\\")
-if not os.path.exists(note_images_path):
-    os.makedirs(note_images_path)
+# 创建临时存放数据的文件夹
+temp_path = os.getcwd() + '\\temp'
+temp_path = temp_path.strip().rstrip("\\")
+if not os.path.exists(temp_path):
+    os.makedirs(temp_path)
+temp_path += '\\'
 
 note_info_manager = note_info_manager.NoteInfoManager()
 # 笔记更新记录
@@ -42,16 +43,14 @@ config_raw = configparser.RawConfigParser()
 config_raw.read(test_cfg)
 
 note_image_http_url = config_raw.get('FTPSection', 'note_image_http_url').encode('utf-8')
+notes_http_url = config_raw.get('FTPSection', 'notes_http_url').encode('utf-8')
 # ftp
 
 ftp_host = config_raw.get('FTPSection', 'host').encode('utf-8')
 ftp_user_name = config_raw.get('FTPSection', 'username').encode('utf-8')
 ftp_password = config_raw.get('FTPSection', 'password').encode('utf-8')
 ftp = ftplib.FTP(ftp_host, ftp_user_name, ftp_password)
-# ftp.login(ftp_user_name, ftp_password)
 ftp.set_pasv(False)
-# sdf = ftp.getwelcome()
-# sdfs = ftp.dir()
 
 # auth_token申请地址：https://dev.yinxiang.com/doc/articles/dev_tokens.php
 auth_token = "S=s64:U=133f619:E=16c299788b0:C=16c058b02a0:P=1cd:A=en-devtoken:V=2:H=9d33d7358ebebc826206c2ae2da274e6"
@@ -187,18 +186,18 @@ def ReplaceBodyHtml(html, hash_code, image_data, image_type):
     # base64_image_str = 'data:{0};base64,{1}'.format(image_type, base64_image_str)
     # image_data = base64.b64decode(base64_image_str)
     file_name = str(int(round(time.time()) * 1000)) + '.png'
-    file_path = note_images_path + file_name
+    file_path = temp_path + file_name
     image_file = open(file_path, "wb+")
     image_file.write(image_data)
     image_file.close()
     image_file = open(file_path, "rb")
-    FtpUpload(file_name, image_file)
+    FtpUpload('./images/note_images/' + file_name, image_file)
     image_file.close()
     os.remove(file_path)
 
     result = enmedia.replace("en-media", "img")
     # src = "src=\"%s\"" % (base64_image_str)
-    src = "src=\"%s\"" % note_image_http_url + file_name
+    src = "src=\"%s\"" % (note_image_http_url + file_name)
     result = result.replace("<img", "<img " + src)
     return html.replace(enmedia, result)
 
@@ -283,8 +282,6 @@ def DoUpdate():
                         # 资源类型
                         res_mime = res.mime
 
-                        # 获取资源
-                        # attachment = note_store.getResource(res_guid, True, False, True, False)
                         attachment_data = res.data.body
                         # 替换图片
                         if res_mime.find('image') >= 0:
@@ -293,27 +290,24 @@ def DoUpdate():
                             hash_code = hash_str.hexdigest()
                             note_content = ReplaceBodyHtml(note_content, hash_code, attachment_data, res_mime)
 
-                        # 保存图片
-                        # if res_mime.find('image') >= 0:
-                        #     file_name = note_images_path + '\\' + str(int(round(time.time()) * 1000)) + '.png'
-                        #     image_file = open(file_name, "wb+")
-                        #     image_file.write(attachment_data)
-                        #     image_file.close()
-
                 # 保存笔记
+
+                file_name = note_guid + '.note'
+                file_path = temp_path + file_name
+                notes_file = open(file_path, "wb+")
+                notes_file.write(note_content)
+                notes_file.close()
+                notes_file = open(file_path, "rb")
+                FtpUpload('./notes/' + file_name, notes_file)
+                notes_file.close()
+                os.remove(file_path)
 
                 result = note_info_manager.InsertOrUpdateNoteInfo(note_guid,
                                                                   note_title, classify_child_id,
                                                                   is_blog,
-                                                                  note_tag_names, note_content,
+                                                                  note_tag_names, file_name,
                                                                   note_create_time,
                                                                   note_update_time, is_insert)
-
-                if result:
-                    # 保存笔记更新信息
-                    result = note_info_manager.InsertOrUpdateNoteUpdateInfo(update_note_info_id,
-                                                                            note_guid,
-                                                                            note_update_time)
                 logging.info('笔记[%s]%s %s', note_title, '添加' if is_insert else '更新', '成功' if result else '失败')
 
 

@@ -11,6 +11,7 @@ import re
 import time
 import ftplib
 import configparser
+import mail_helper
 
 logging_path = os.getcwd() + '\\logs'
 logging_path = logging_path.strip().rstrip("\\")
@@ -38,9 +39,9 @@ note_info_manager = note_info_manager.NoteInfoManager()
 notes_update = note_info_manager.GetAllNoteUpdateInfo()
 # 所有分类
 classify_data = note_info_manager.GetAllClassifyInfo()
-test_cfg = "./config.ini"
+cfg = "./config.ini"
 config_raw = configparser.RawConfigParser()
-config_raw.read(test_cfg)
+config_raw.read(cfg)
 
 note_image_http_url = config_raw.get('FTPSection', 'note_image_http_url').encode('utf-8')
 notes_http_url = config_raw.get('FTPSection', 'notes_http_url').encode('utf-8')
@@ -50,6 +51,7 @@ ftp_host = config_raw.get('FTPSection', 'host').encode('utf-8')
 ftp_user_name = config_raw.get('FTPSection', 'username').encode('utf-8')
 ftp_password = config_raw.get('FTPSection', 'password').encode('utf-8')
 ftp = ftplib.FTP(ftp_host, ftp_user_name, ftp_password)
+# 关闭被动模式
 ftp.set_pasv(False)
 
 # auth_token申请地址：https://dev.yinxiang.com/doc/articles/dev_tokens.php
@@ -72,7 +74,22 @@ weekday_chinese_map = {
 now = datetime.datetime.now()
 diary_title = '%s（%s）' % (now.strftime('%Y%m%d'),
                           weekday_chinese_map[now.weekday()])
-logging.info('开始更新笔记: %s', diary_title)
+info_str = '开始更新笔记: %s' % diary_title
+mail_send_str = ''
+logging.info(info_str)
+
+
+def MakeMailSendStr(str):
+    global mail_send_str
+    mail_send_str += str + '\r\n'
+
+
+MakeMailSendStr(info_str)
+notes_count = 0
+insert_count = 0
+update_count = 0
+insert_failed_count = 0
+update_failed_count = 0
 
 
 class Item:
@@ -114,7 +131,9 @@ def UpdateClassifyInfo(classify_name, parent_id, guid):
                                                         parent_classify.parent_id,
                                                         parent_classify.guid)
         if not result:
-            logging.info('添加或更新笔记分类失败')
+            info_str = '添加或更新笔记分类失败'
+            logging.info(info_str)
+            MakeMailSendStr(info_str)
             exit(1)
     else:
         result = parent_classify.id
@@ -177,7 +196,9 @@ def ReplaceBodyHtml(html, hash_code, image_data, image_type):
     valid_data = proc.match(html)
 
     if valid_data is None:
-        logging.info("valid failed")
+        info_str = 'valid failed'
+        logging.info(info_str)
+        MakeMailSendStr(info_str)
         return html
 
     enmedia = valid_data.group('en_media')
@@ -203,6 +224,12 @@ def ReplaceBodyHtml(html, hash_code, image_data, image_type):
 
 
 def DoUpdate():
+    global notes_count
+    global insert_count
+    global update_count
+    global insert_failed_count
+    global update_failed_count
+
     # 创建一个印象笔记client对象
     client = EvernoteClient(token=auth_token, sandbox=sandbox, china=china, service_host='app.yinxiang.com')
 
@@ -221,8 +248,11 @@ def DoUpdate():
     # 获取笔记本的所有标签
     tags_list = note_store.listTags()
     blog_tag_guid = GetBlogTagGuid(tags_list)
+    notes_count = len(notebooks)
 
-    logging.info('Found %s notebooks', len(notebooks))
+    info_str = 'Found %s notebooks' % notes_count
+    logging.info(info_str)
+    MakeMailSendStr(info_str)
     # 循环所有笔记本
     for notebook in notebooks:
         # 笔记本guid
@@ -236,7 +266,9 @@ def DoUpdate():
         classify_parent_id = UpdateClassifyInfo(stack, 0, stack_guid)
         classify_child_id = UpdateClassifyInfo(notebook_name, classify_parent_id, guid)
 
-        logging.info('guid: [%s], notebook [%s]', guid, notebook_name)
+        info_str = 'guid: [%s], notebook [%s]' % (guid, notebook_name)
+        logging.info(info_str)
+        MakeMailSendStr(info_str)
 
         # 创建NoteFilter对象查询笔记的参数
         filter = NoteStore.NoteFilter()
@@ -254,6 +286,7 @@ def DoUpdate():
 
             # 需要更新的笔记
             if is_insert or update_note_info:
+
                 # 获取笔记内容
                 note_content = note_store.getNoteContent(note_guid)
                 index = note_content.find('<en-note>')
@@ -270,7 +303,10 @@ def DoUpdate():
                 note_create_time = note.created
                 note_update_time = note.updated
 
-                logging.info('%s笔记: [%s]', '添加' if is_insert else '更新', note_title)
+                info_str = '%s笔记: [%s]' % ('添加' if is_insert else '更新', note_title)
+                logging.info(info_str)
+                MakeMailSendStr(info_str)
+
                 note_resources = note.resources
                 if note_resources is not None:
                     note_resources = note_store.getNote(note_guid, False, True, False, False).resources
@@ -308,12 +344,38 @@ def DoUpdate():
                                                                   note_tag_names, file_name,
                                                                   note_create_time,
                                                                   note_update_time, is_insert)
-                logging.info('笔记[%s]%s %s', note_title, '添加' if is_insert else '更新', '成功' if result else '失败')
+                info_str = '笔记[%s]%s %s' % (note_title, '添加' if is_insert else '更新', '成功' if result else '失败')
+                logging.info(info_str)
+                MakeMailSendStr(info_str)
+                if result:
+                    if is_insert:
+                        insert_count += 1
+                    else:
+                        update_count += 1
+                else:
+                    if is_insert:
+                        insert_failed_count += 1
+                    else:
+                        update_failed_count += 1
 
 
 try:
-    DoUpdate()
-except Exception as e:
-    logging.info('Exception: [%s]', e)
-finally:
+    # DoUpdate()
+    info_str = '更新完成，笔记共[%s] %s %s %s %s' % (
+        notes_count,
+        ', 添加[' + insert_count + ']' if insert_count > 0 else '',
+        ', 更新[' + update_count + ']' if update_count > 0 else '',
+        ', 添加失败[' + insert_failed_count + ']' if insert_failed_count > 0 else '',
+        ', 更新失败[' + update_failed_count + ']' if update_failed_count > 0 else '')
+    logging.info(info_str)
+    MakeMailSendStr(info_str)
+    mail = mail_helper.MailHelper()
+    mail.SendEmail(mail_send_str)
     ftp.quit()
+except Exception as e:
+    info_str = 'Exception: [%s]' % e
+    logging.info(info_str)
+    MakeMailSendStr(info_str)
+    ftp.quit()
+finally:
+    pass

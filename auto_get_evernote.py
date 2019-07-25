@@ -360,7 +360,7 @@ def DoUpdate():
 
 
 try:
-    # DoUpdate()
+    DoUpdate()
     info_str = '更新完成，笔记共[%s] %s %s %s %s' % (
         notes_count,
         ', 添加[' + insert_count + ']' if insert_count > 0 else '',
@@ -370,7 +370,6 @@ try:
     logging.info(info_str)
     MakeMailSendStr(info_str)
     mail = mail_helper.MailHelper()
-    mail.SendEmail(mail_send_str)
     ftp.quit()
 except Exception as e:
     info_str = 'Exception: [%s]' % e
@@ -378,4 +377,5 @@ except Exception as e:
     MakeMailSendStr(info_str)
     ftp.quit()
 finally:
+    mail.SendEmail(mail_send_str)
     pass

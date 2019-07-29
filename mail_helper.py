@@ -18,7 +18,7 @@ class MailHelper:
         self.sender = config_raw.get('EmailSection', 'sender').encode('utf-8')
         self.receiver = config_raw.get('EmailSection', 'receiver').encode('utf-8')
 
-        self.smtp = smtplib.SMTP()
+        self.smtp = smtplib.SMTP_SSL()
         self.smtp.connect(self.host, self.port)
         self.smtp.login(self.username, self.password)
         pass

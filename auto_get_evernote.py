@@ -363,12 +363,13 @@ try:
     DoUpdate()
     info_str = '更新完成，笔记共[%s] %s %s %s %s' % (
         notes_count,
-        ', 添加[' + insert_count + ']' if insert_count > 0 else '',
-        ', 更新[' + update_count + ']' if update_count > 0 else '',
-        ', 添加失败[' + insert_failed_count + ']' if insert_failed_count > 0 else '',
-        ', 更新失败[' + update_failed_count + ']' if update_failed_count > 0 else '')
+        ', 添加[' + str(insert_count) + ']' if insert_count > 0 else '',
+        ', 更新[' + str(update_count) + ']' if update_count > 0 else '',
+        ', 添加失败[' + str(insert_failed_count) + ']' if insert_failed_count > 0 else '',
+        ', 更新失败[' + str(update_failed_count) + ']' if update_failed_count > 0 else '')
     logging.info(info_str)
     MakeMailSendStr(info_str)
+    mail_send_str = info_str + '\r\n' + mail_send_str
     mail = mail_helper.MailHelper()
     ftp.quit()
 except Exception as e:

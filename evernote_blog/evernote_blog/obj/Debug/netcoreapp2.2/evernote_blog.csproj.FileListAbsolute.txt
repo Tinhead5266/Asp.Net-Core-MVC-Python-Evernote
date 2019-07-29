@@ -28,3 +28,5 @@ D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_b
 D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_blog\obj\Debug\netcoreapp2.2\evernote_blog.dll
 D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_blog\obj\Debug\netcoreapp2.2\evernote_blog.pdb
 D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_blog\obj\Debug\netcoreapp2.2\evernote_blog.csproj.CopyComplete
+D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_blog\obj\Debug\netcoreapp2.2\Razor\Views\NoteInfoes\Index.g.cshtml.cs
+D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_blog\obj\Debug\netcoreapp2.2\Razor\Views\NoteInfos.g.cshtml.cs

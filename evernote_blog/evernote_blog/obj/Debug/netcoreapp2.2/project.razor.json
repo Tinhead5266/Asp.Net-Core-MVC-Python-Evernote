@@ -2948,8 +2948,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\NoteInfoes\\Index.cshtml",
+      "TargetPath": "Views\\NoteInfoes\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Error\\Index.cshtml",
+      "TargetPath": "Views\\Error\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_BlogUserSection.cshtml",
+      "TargetPath": "Views\\Shared\\_BlogUserSection.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\NoteInfos.cshtml",
+      "TargetPath": "Views\\NoteInfos.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2960,6 +2980,11 @@
     {
       "FilePath": "Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\NoteDetail\\Index.cshtml",
+      "TargetPath": "Views\\NoteDetail\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

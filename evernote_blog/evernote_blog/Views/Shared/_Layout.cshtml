@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -7,17 +7,28 @@
     <link rel="icon" href="~/img/favicon.png" type="image/png">
     <title>Tinhead Blog</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="~/css/bootstrap.css">
-    <link rel="stylesheet" href="~/vendors/linericon/style.css">
-    <link rel="stylesheet" href="~/css/font-awesome.min.css">
-    <link rel="stylesheet" href="~/vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="~/vendors/lightbox/simpleLightbox.css">
-    <link rel="stylesheet" href="~/vendors/nice-select/css/nice-select.css">
-    <link rel="stylesheet" href="~/vendors/animate-css/animate.css">
-    <link rel="stylesheet" href="~/vendors/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="~/css/bootstrap.css?v=1.1">
+    <link rel="stylesheet" href="~/vendors/linericon/style.css?v=1.0">
+    <link rel="stylesheet" href="~/css/font-awesome.min.css?v=1.0">
+    <link rel="stylesheet" href="~/vendors/owl-carousel/owl.carousel.min.css?v=1.0">
+    <link rel="stylesheet" href="~/vendors/lightbox/simpleLightbox.css?v=1.0">
+    <link rel="stylesheet" href="~/vendors/nice-select/css/nice-select.css?v=1.0">
+    @*<link rel="stylesheet" href="~/vendors/animate-css/animate.css?v=1.0">*@
+    @*<link rel="stylesheet" href="~/vendors/jquery-ui/jquery-ui.css?v=1.0">*@
     <!-- main css -->
-    <link rel="stylesheet" href="~/css/style.css">
-    <link rel="stylesheet" href="~/css/responsive.css">
+    <link rel="stylesheet" href="~/css/style.css?v=1.2">
+    <link rel="stylesheet" href="~/css/responsive.css?v=1.1">
+    <script src="~/js/jquery-3.2.1.min.js?v=1.0"></script>
+    <script src="~/js/popper.js?v=1.0"></script>
+    @*<script src="~/js/bootstrap.min.js?v=1.0"></script>*@
+    <script src="~/vendors/nice-select/js/jquery.nice-select.min.js?v=1.0"></script>
+    @*<script src="~/vendors/jquery-ui/jquery-ui.js?v=1.0"></script>*@
+    <script src="~/js/jquery.ajaxchimp.min.js?v=1.0"></script>
+    <style>
+        a {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <!--================Header Menu Area =================-->
@@ -87,19 +98,87 @@
     <!--================ End footer Area  =================-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="~/js/jquery-3.2.1.min.js"></script>
-    <script src="~/js/popper.js"></script>
-    <script src="~/js/bootstrap.min.js"></script>
-    <script src="~/js/stellar.js"></script>
-    <script src="~/vendors/lightbox/simpleLightbox.min.js"></script>
-    <script src="~/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="~/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="~/vendors/isotope/isotope-min.js"></script>
-    <script src="~/vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="~/vendors/jquery-ui/jquery-ui.js"></script>
-    <script src="~/js/jquery.ajaxchimp.min.js"></script>
-    <script src="~/js/mail-script.js"></script>
-    <script src="~/js/theme.js"></script>
+
+    <script src="~/js/stellar.js?v=1.0"></script>
+    <script src="~/vendors/lightbox/simpleLightbox.min.js?v=1.0"></script>
+    <script src="~/vendors/isotope/imagesloaded.pkgd.min.js?v=1.0"></script>
+    <script src="~/vendors/isotope/isotope-min.js?v=1.0"></script>
+    <script src="~/vendors/owl-carousel/owl.carousel.min.js?v=1.0"></script>
+    <script src="~/js/mail-script.js?v=1.0"></script>
+    <script src="~/js/theme.js?v=1.0"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+<script type="text/javascript">
+
+    var Type;
+    var PageIndex;
+    var ClassifyId;
+    var CreateTime;
+    var SearchText;
+
+    function SetParameter(obj) {
+        var type = obj.type;
+        var pageIndex = obj.pageIndex;
+        var classifyId = obj.classifyId;
+        var createTime = obj.createTime;
+        var searchText = obj.searchText;
+
+        Type = type ? type : '';
+        PageIndex = pageIndex ? pageIndex : 1;
+        ClassifyId = classifyId ? classifyId : 0;
+        CreateTime = createTime ? createTime : 0;
+        SearchText = searchText ? searchText : '';
+    }
+
+    function ResetParameter() {
+        Type = '';
+        PageIndex = 1;
+        ClassifyId = 0;
+        CreateTime = 0;
+        SearchText = '';
+    }
+
+    function Action() {
+        location.href = '/' +
+            '?type=' + (Type ? Type : '') +
+            '&pageIndex=' + (PageIndex ? PageIndex : 1) +
+            '&classifyId=' + (ClassifyId ? ClassifyId : 0) +
+            '&createTime=' + (CreateTime ? CreateTime : 0) +
+            '&searchText=' + (SearchText ? SearchText : '');
+    }
+
+    function goToPage() {
+        var pageIndex = $("#inputGoToPage").val();
+        PageIndex = pageIndex ? pageIndex : 1;
+        Type = 'skip';
+        Action();
+    }
+
+    function SearchNoteBySearchText() {
+        ResetParameter();
+        var searchText = $("#searchText").val();
+        SearchText = searchText ? searchText : '';
+        Type = 'search';
+        PageIndex = 1;
+        Action();
+    }
+
+    function SearchNoteByClassifyId(classifyId) {
+        ResetParameter();
+        ClassifyId = classifyId ? classifyId : 0;
+        Type = 'className';
+        PageIndex = 1;
+        Action();
+    }
+
+    function SearchNoteByCreateTime(createTime) {
+        ResetParameter();
+        CreateTime = createTime ? createTime : 0;
+        Type = 'createTime';
+        PageIndex = 1;
+        Action();
+    }
+
+
+</script>

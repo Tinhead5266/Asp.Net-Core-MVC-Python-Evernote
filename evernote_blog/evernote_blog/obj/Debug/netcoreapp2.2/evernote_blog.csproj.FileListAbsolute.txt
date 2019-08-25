@@ -30,3 +30,6 @@ D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_b
 D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_blog\obj\Debug\netcoreapp2.2\evernote_blog.csproj.CopyComplete
 D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_blog\obj\Debug\netcoreapp2.2\Razor\Views\NoteInfoes\Index.g.cshtml.cs
 D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_blog\obj\Debug\netcoreapp2.2\Razor\Views\NoteInfos.g.cshtml.cs
+D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_blog\obj\Debug\netcoreapp2.2\Razor\Views\NoteDetail\Index.g.cshtml.cs
+D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_blog\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_BlogUserSection.g.cshtml.cs
+D:\My\Code\application\asp.net core mvc python evernote\evernote_blog\evernote_blog\obj\Debug\netcoreapp2.2\Razor\Views\Error\Index.g.cshtml.cs

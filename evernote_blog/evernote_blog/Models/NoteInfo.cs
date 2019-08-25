@@ -42,6 +42,12 @@ namespace evernote_blog.Models
         public string Content { get; set; }
 
         /// <summary>
+        /// 文章内容摘要
+        /// </summary>
+        [Column("content_snippet")]
+        public string ContentSnippet { get; set; }
+
+        /// <summary>
         /// 创建时间
         /// </summary>
         [Column("create_time")]

@@ -23,7 +23,7 @@ namespace evernote_blog.DataAccess.Implement
         /// <returns></returns>
         public List<ShowNoteClassifyInfo> GetClassifyIdList()
         {
-            var classifyGroupList = Context.NoteData.GroupBy(p => p.ClassifyId);
+            var classifyGroupList = Context.NoteData.Where(p => p.IsBlog == 0).GroupBy(p => p.ClassifyId);
 
             var showNoteClassifyInfos = new List<ShowNoteClassifyInfo>();
 
@@ -49,7 +49,7 @@ namespace evernote_blog.DataAccess.Implement
         /// <returns></returns>
         public NoteInfo GetNoteInfoByGuid(string guid)
         {
-            return Context.NoteData.Single(p => p.NoteGuid == guid);
+            return Context.NoteData.Single(p => p.NoteGuid == guid && p.IsBlog == 0);
         }
 
         /// <summary>
@@ -62,15 +62,21 @@ namespace evernote_blog.DataAccess.Implement
         /// <param name="pageSize"></param>
         /// <param name="classifyId"></param>
         /// <param name="searchText"></param>
+        /// <param name="createTime"></param>
         /// <returns></returns>
-        public List<NoteInfo> GetNoteInfoByPage(out int pageSum, out int pageIndexOut, string type = "", int pageIndex = 1, int pageSize = 8, int classifyId = 0, string searchText = "")
+        public List<NoteInfo> GetNoteInfoByPage(out int pageSum, out int pageIndexOut, string type = "", int pageIndex = 1, int pageSize = 8, int classifyId = 0, string searchText = "", long createTime = 0)
         {
 
-            var dbData = Context.NoteData.OrderByDescending(p => p.UpdateTime).Where(p => true);
+            var dbData = Context.NoteData.OrderByDescending(p => p.UpdateTime).Where(p => p.IsBlog == 0);
 
             if (classifyId > 0)
             {
                 dbData = dbData.Where(p => p.ClassifyId == classifyId);
+            }
+
+            if (createTime > 0)
+            {
+                dbData = dbData.Where(p => CommonUnit.IsEqualDay(p.CreateTime, createTime));
             }
 
             if (!string.IsNullOrWhiteSpace(searchText))
@@ -118,9 +124,6 @@ namespace evernote_blog.DataAccess.Implement
                     }
                     break;
 
-                case "className":
-
-                    break;
                 case "search":
                     if (string.IsNullOrWhiteSpace(searchText))
                     {
@@ -135,6 +138,12 @@ namespace evernote_blog.DataAccess.Implement
             var noteData = dbData.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             pageIndexOut = pageIndex;
             return noteData;
+        }
+
+        public List<NoteInfo> GetNewestNOteInfos(int count = 5)
+        {
+            count = count <= 0 ? 5 : count;
+            return Context.NoteData.OrderByDescending(p => p.CreateTime).Where(p => p.IsBlog == 0).Take(count).ToList();
         }
 
         /// <summary>

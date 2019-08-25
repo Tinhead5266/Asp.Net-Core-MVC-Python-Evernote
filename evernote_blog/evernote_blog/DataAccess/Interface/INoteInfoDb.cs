@@ -15,8 +15,9 @@ namespace evernote_blog.DataAccess.Interface
         /// <param name="pageSize"></param>
         /// <param name="classifyId"></param>
         /// <param name="searchText"></param>
+        /// <param name="createTime"></param>
         /// <returns></returns>
-        List<NoteInfo> GetNoteInfoByPage(out int count, out int pageIndexOut, string type = "", int page = 0, int pageSize = 10, int classifyId = 0, string searchText = "");
+        List<NoteInfo> GetNoteInfoByPage(out int count, out int pageIndexOut, string type = "", int page = 0, int pageSize = 10, int classifyId = 0, string searchText = "", long createTime = 0);
 
         /// <summary>
         /// 根据笔记Evernote编号获取笔记

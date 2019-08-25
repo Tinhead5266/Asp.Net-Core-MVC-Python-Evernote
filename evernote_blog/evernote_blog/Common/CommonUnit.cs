@@ -2,6 +2,7 @@
 using evernote_blog.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace evernote_blog.Common
@@ -36,6 +37,26 @@ namespace evernote_blog.Common
             return dateTime.ToString("yyyy-MM-dd");
         }
 
+
+        /// <summary>
+        /// 判断两个时间戳是否为同一天
+        /// </summary>
+        /// <param name="timeStamp1"></param>
+        /// <param name="timeStamp2"></param>
+        /// <returns></returns>
+        public static bool IsEqualDay(long timeStamp1, long timeStamp2)
+        {
+            var start = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            var dateTime1 = start.AddMilliseconds(timeStamp1).AddHours(8);
+            var dateTime2 = start.AddMilliseconds(timeStamp2).AddHours(8);
+
+            return dateTime1.Day == dateTime2.Day && dateTime1.Month == dateTime2.Month && dateTime1.Year == dateTime2.Year;
+        }
+
+        /// <summary>
+        /// 获取博客背景图片
+        /// </summary>
+        /// <returns></returns>
         public static string GetBlogImageStr()
         {
             var maxNum = 12;
@@ -86,18 +107,46 @@ namespace evernote_blog.Common
             return pageStrList;
         }
 
-
+        /// <summary>
+        /// 获取有笔记的分类
+        /// </summary>
+        /// <param name="classifyIds"></param>
+        /// <returns></returns>
         public static List<ClassifyInfo> GetBlogShowClassifyInfos(List<int> classifyIds)
         {
-            var classifyInfos = new List<ClassifyInfo>();
             if (ClassifyInfos == null)
             {
                 ClassifyInfos = new ClassifyInfoDb(Context).GetAllClassifyInfo();
             }
-            classifyInfos = ClassifyInfos.Where(p => classifyIds.Contains(p.Id)).ToList();
+            var classifyInfos = ClassifyInfos.Where(p => classifyIds.Contains(p.Id)).ToList();
 
 
             return classifyInfos;
+        }
+
+        /// <summary>
+        /// 获取笔记内容
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
+        public static string GetNoteContent(string fileName)
+        {
+            string content;
+            //有点low逼写死了哈哈
+            var path = Path.Combine("/www/blog.tinhead.xyz", "notes", fileName);
+            if (!File.Exists(path))
+            {
+                return $"Note Not Find [path:{path}]";
+            }
+
+            using (FileStream fs = new FileStream(path, FileMode.Open))
+            {
+                using (StreamReader sr = new StreamReader(fs))
+                {
+                    content = sr.ReadToEnd();
+                }
+            }
+            return content;
         }
     }
 }

@@ -132,8 +132,7 @@ namespace evernote_blog.Common
         public static string GetNoteContent(string fileName)
         {
             string content;
-            //有点low逼写死了哈哈
-            var path = Path.Combine("/www/blog.tinhead.xyz", "notes", fileName);
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "notes", fileName);
             if (!File.Exists(path))
             {
                 return $"Note Not Find [path:{path}]";

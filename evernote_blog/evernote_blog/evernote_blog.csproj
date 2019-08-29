@@ -1,10 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <Version>1.0.1</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="notes\**" />
+    <Content Remove="notes\**" />
+    <EmbeddedResource Remove="notes\**" />
+    <None Remove="notes\**" />
+  </ItemGroup>
 
 
   <ItemGroup>

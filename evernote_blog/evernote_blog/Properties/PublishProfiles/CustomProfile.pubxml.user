@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAw+Kmzqj/QUqAC1/jnfZMUwAAAAACAAAAAAAQZgAAAAEAACAAAACHlTmhWspBNWEVwtmBimMfTdotZ7Wd0BpEUITqgZEWjAAAAAAOgAAAAAIAACAAAAAei8P5JoPDApwM9/mukpPl3Sv/+4zvvCN3/bhYVheVRiAAAAAEi3oKx88pCx7Ihg8vtAizbWtGvJa0TdxN8kR1pIHWbUAAAACLVGQ5evUL8Jq0/5kSwEnSwdBfiko8hHnyXs7Dnkjmva5of6FFFZsUZVtFQtM6PjYUzYZ68g3EekW7jFpt66yp</EncryptedPassword>
+    <_PublishTargetUrl>ftp://47.102.145.8</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>07/26/2019 00:42:53</publishTime>
+    </File>
+    <File Include="BouncyCastle.Crypto.dll">
+      <publishTime>05/28/2018 16:12:20</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>11/12/2018 17:42:52</publishTime>
+    </File>
+    <File Include="evernote_blog.deps.json">
+      <publishTime>08/28/2019 23:32:35</publishTime>
+    </File>
+    <File Include="evernote_blog.dll">
+      <publishTime>08/28/2019 23:32:30</publishTime>
+    </File>
+    <File Include="evernote_blog.pdb">
+      <publishTime>08/28/2019 23:32:30</publishTime>
+    </File>
+    <File Include="evernote_blog.runtimeconfig.json">
+      <publishTime>08/28/2019 23:32:35</publishTime>
+    </File>
+    <File Include="evernote_blog.Views.dll">
+      <publishTime>08/28/2019 23:32:30</publishTime>
+    </File>
+    <File Include="evernote_blog.Views.pdb">
+      <publishTime>08/28/2019 23:32:30</publishTime>
+    </File>
+    <File Include="Google.Protobuf.dll">
+      <publishTime>08/10/2018 18:51:54</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>08/12/2019 15:15:54</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>08/12/2019 15:15:35</publishTime>
+    </File>
+    <File Include="Microsoft.Data.Sqlite.dll">
+      <publishTime>06/18/2019 21:21:18</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>06/18/2019 21:21:18</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>06/18/2019 21:21:26</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>06/18/2019 21:21:34</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Sqlite.dll">
+      <publishTime>06/18/2019 21:21:58</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Redis.dll">
+      <publishTime>07/24/2019 19:14:34</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>11/12/2018 17:42:08</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>11/12/2018 17:42:32</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>11/12/2018 17:42:44</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>11/12/2018 17:42:40</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>11/12/2018 17:42:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>11/12/2018 17:42:12</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>11/12/2018 17:42:48</publishTime>
+    </File>
+    <File Include="MySql.Data.dll">
+      <publishTime>06/25/2019 03:21:48</publishTime>
+    </File>
+    <File Include="MySql.Data.EntityFrameworkCore.dll">
+      <publishTime>06/25/2019 03:22:12</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>08/12/2019 15:15:45</publishTime>
+    </File>
+    <File Include="Remotion.Linq.dll">
+      <publishTime>08/12/2019 15:16:01</publishTime>
+    </File>
+    <File Include="Renci.SshNet.dll">
+      <publishTime>10/16/2017 20:53:06</publishTime>
+    </File>
+    <File Include="runtimes/alpine-x64/native/libe_sqlite3.so">
+      <publishTime>12/18/2018 15:00:38</publishTime>
+    </File>
+    <File Include="runtimes/linux-arm/native/libe_sqlite3.so">
+      <publishTime>12/18/2018 15:00:38</publishTime>
+    </File>
+    <File Include="runtimes/linux-arm64/native/libe_sqlite3.so">
+      <publishTime>12/18/2018 15:00:38</publishTime>
+    </File>
+    <File Include="runtimes/linux-armel/native/libe_sqlite3.so">
+      <publishTime>12/18/2018 15:00:38</publishTime>
+    </File>
+    <File Include="runtimes/linux-musl-x64/native/libe_sqlite3.so">
+      <publishTime>12/18/2018 15:00:38</publishTime>
+    </File>
+    <File Include="runtimes/linux-x64/native/libe_sqlite3.so">
+      <publishTime>12/18/2018 15:00:38</publishTime>
+    </File>
+    <File Include="runtimes/linux-x86/native/libe_sqlite3.so">
+      <publishTime>12/18/2018 15:00:38</publishTime>
+    </File>
+    <File Include="runtimes/osx-x64/native/libe_sqlite3.dylib">
+      <publishTime>12/18/2018 15:00:36</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/e_sqlite3.dll">
+      <publishTime>12/18/2018 15:01:12</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/e_sqlite3.dll">
+      <publishTime>12/18/2018 15:01:12</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>07/19/2017 10:01:34</publishTime>
+    </File>
+    <File Include="runtimes/win8-arm/native/e_sqlite3.dll">
+      <publishTime>12/18/2018 15:01:12</publishTime>
+    </File>
+    <File Include="SQLitePCLRaw.batteries_green.dll">
+      <publishTime>12/18/2018 15:00:32</publishTime>
+    </File>
+    <File Include="SQLitePCLRaw.batteries_v2.dll">
+      <publishTime>12/18/2018 15:00:32</publishTime>
+    </File>
+    <File Include="SQLitePCLRaw.core.dll">
+      <publishTime>12/18/2018 15:00:30</publishTime>
+    </File>
+    <File Include="SQLitePCLRaw.provider.e_sqlite3.dll">
+      <publishTime>12/18/2018 15:00:52</publishTime>
+    </File>
+    <File Include="SshNet.Security.Cryptography.dll">
+      <publishTime>07/14/2016 20:47:20</publishTime>
+    </File>
+    <File Include="StackExchange.Redis.StrongName.dll">
+      <publishTime>07/24/2019 19:14:28</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>08/12/2019 15:16:11</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>08/12/2019 15:16:12</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>08/12/2019 15:16:12</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>08/12/2019 15:16:12</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>08/12/2019 15:16:12</publishTime>
+    </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>11/20/2017 18:09:04</publishTime>
+    </File>
+    <File Include="System.Interactive.Async.dll">
+      <publishTime>07/24/2019 19:15:09</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>07/19/2017 10:01:34</publishTime>
+    </File>
+    <File Include="System.Xml.XPath.XmlDocument.dll">
+      <publishTime>06/11/2016 23:15:02</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>08/28/2019 23:32:36</publishTime>
+    </File>
+    <File Include="wwwroot/css/bootstrap.css">
+      <publishTime>08/03/2019 17:55:51</publishTime>
+    </File>
+    <File Include="wwwroot/css/breadcrumb.css">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/breadcrumb.css.map">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/font-awesome.min.css">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/responsive.css">
+      <publishTime>08/03/2019 18:01:31</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/css/style.css">
+      <publishTime>08/03/2019 18:26:17</publishTime>
+    </File>
+    <File Include="wwwroot/css/style.css.map">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_button.css">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_button.css.map">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_feature.css">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_feature.css.map">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_footer.css">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_footer.css.map">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_megazin.css">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_megazin.css.map">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_team.css">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_team.css.map">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_testimonials.css">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/css/_testimonials.css.map">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/fonts/fontawesome-webfont.eot">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/fonts/fontawesome-webfont.svg">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/fonts/fontawesome-webfont.ttf">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/fonts/fontawesome-webfont.woff">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/fonts/fontawesome-webfont.woff2">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/fonts/FontAwesome.otf">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/.DS_Store">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/banner/banner-2.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/banner/banner.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/banner/home-banner.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/add-1.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/add.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/author.jpg">
+      <publishTime>07/27/2019 15:31:28</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/author.png">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/c1.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/c2.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/c3.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/c4.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/c5.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/c6.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/cat-post/cat-post-1.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/cat-post/cat-post-2.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/cat-post/cat-post-3.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/causes/causes-1.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/causes/causes-2.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/causes/causes-3.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/choice/choice-1.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/choice/choice-2.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/choice/choice-3.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/choice/choice-4.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/feature-img1.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/l-news/l-news-1.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/l-news/l-news-2.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/l-news/l-news-3.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/l-news/l-news-4.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/main-blog/m-blog-1.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/main-blog/m-blog-2.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/main-blog/m-blog-3.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/main-blog/m-blog-4.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/main-blog/m-blog-5.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/news-blog.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/next.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/post1.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/post2.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/post3.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/post4.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-1.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-10.jpg">
+      <publishTime>05/04/2019 23:11:24</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-11.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-12.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-13.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-14.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-2.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-3.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-4.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-5.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-6.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-7.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-8.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/popular-post/pp-9.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/post-img1.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/post-img2.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/prev.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/blog/user-img.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/a.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/a2.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/d.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/disabled-check.png">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/disabled-radio.png">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/f1.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/f2.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/f3.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/f4.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/f5.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/f6.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/f7.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/f8.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/g1.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/g2.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/g3.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/g4.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/g5.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/g6.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/g7.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/g8.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/primary-check.png">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/primary-radio.png">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/success-check.png">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/success-radio.png">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/user1.png">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/user2.png">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/elements/_DS_Store">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/favicon.png">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/footer-logo.png">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-1.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-10.jpg">
+      <publishTime>07/26/2019 22:32:41</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-11.jpg">
+      <publishTime>07/26/2019 22:33:39</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-12.jpg">
+      <publishTime>07/26/2019 22:34:32</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-2.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-3.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-4.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-5.jpg">
+      <publishTime>07/26/2019 22:24:17</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-6.jpg">
+      <publishTime>07/26/2019 22:25:13</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-7.jpg">
+      <publishTime>07/26/2019 22:27:20</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-8.jpg">
+      <publishTime>07/26/2019 22:28:23</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-9.jpg">
+      <publishTime>07/26/2019 22:31:33</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-small-1.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-small-2.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-small-3.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-small-4.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-small-5.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-small-6.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-small-7.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/home-blog/blog-small-8.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/instagram/Image-01.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/instagram/Image-02.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/instagram/Image-03.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/instagram/Image-04.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/instagram/Image-05.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/instagram/Image-06.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/instagram/Image-07.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/instagram/Image-08.jpg">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/img/logo.png">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/bootstrap.min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/contact.js">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/js/gmaps.min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery-3.2.1.min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery.ajaxchimp.min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery.form.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery.validate.min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/mail-script.js">
+      <publishTime>07/25/2019 13:49:52</publishTime>
+    </File>
+    <File Include="wwwroot/js/popper.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/stellar.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/theme.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css">
+      <publishTime>07/25/2019 13:49:52</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map">
+      <publishTime>07/25/2019 13:49:52</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>07/25/2019 13:49:51</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>07/25/2019 13:49:52</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>07/25/2019 13:49:51</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js.map">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>07/25/2019 13:49:51</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>07/25/2019 13:49:51</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/LICENSE.md">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.js">
+      <publishTime>07/25/2019 13:49:51</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.js">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.map">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/LICENSE.txt">
+      <publishTime>07/24/2019 19:25:16</publishTime>
+    </File>
+    <File Include="wwwroot/scss/breadcrumb.scss">
+      <publishTime>08/03/2019 18:27:15</publishTime>
+    </File>
+    <File Include="wwwroot/scss/style.scss">
+      <publishTime>07/25/2019 13:49:51</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_blog.scss">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_button.scss">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_contact.scss">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_elements.scss">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_footer.scss">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_header.scss">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_megazin.scss">
+      <publishTime>07/25/2019 13:49:52</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_predefine.scss">
+      <publishTime>07/25/2019 13:49:52</publishTime>
+    </File>
+    <File Include="wwwroot/scss/_variables.scss">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/.DS_Store">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/animate-css/animate.css">
+      <publishTime>07/25/2019 13:49:52</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/animate-css/wow.min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/bootstrap-datepicker/bootstrap-select.css">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/bootstrap-datepicker/bootstrap-select.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/isotope/imagesloaded.pkgd.min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/isotope/isotope-min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/jquery-ui/jquery-ui.css">
+      <publishTime>07/25/2019 13:49:51</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/jquery-ui/jquery-ui.js">
+      <publishTime>07/25/2019 13:49:51</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/lightbox/simpleLightbox.css">
+      <publishTime>07/25/2019 13:49:48</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/lightbox/simpleLightbox.min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/linericon/fonts/Linearicons-Free.eot">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/linericon/fonts/Linearicons-Free.svg">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/linericon/fonts/Linearicons-Free.ttf">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/linericon/fonts/Linearicons-Free.woff">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/linericon/fonts/Linearicons-Free.woff2">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/linericon/style.css">
+      <publishTime>07/25/2019 13:49:52</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/nice-select/css/nice-select.css">
+      <publishTime>07/25/2019 13:49:52</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/nice-select/css/style.css">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/nice-select/js/jquery.nice-select.js">
+      <publishTime>07/25/2019 13:49:50</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/nice-select/js/jquery.nice-select.min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/owl-carousel/assets/ajax-loader.gif">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/owl-carousel/assets/animated.css">
+      <publishTime>07/25/2019 13:49:49</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/owl-carousel/assets/owl.carousel.css">
+      <publishTime>07/25/2019 13:49:48</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/owl-carousel/owl.carousel.min.css">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+    <File Include="wwwroot/vendors/owl-carousel/owl.carousel.min.js">
+      <publishTime>05/04/2019 23:11:25</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

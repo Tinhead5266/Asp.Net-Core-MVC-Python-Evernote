@@ -50,12 +50,13 @@ notes_http_url = config_raw.get('FTPSection', 'notes_http_url').encode('utf-8')
 ftp_host = config_raw.get('FTPSection', 'host').encode('utf-8')
 ftp_user_name = config_raw.get('FTPSection', 'username').encode('utf-8')
 ftp_password = config_raw.get('FTPSection', 'password').encode('utf-8')
-ftp = ftplib.FTP(ftp_host, ftp_user_name, ftp_password)
+ftp = ftplib.FTP(ftp_host)
+ftp.login(ftp_user_name, ftp_password)
 # 关闭被动模式
 ftp.set_pasv(False)
 
 # auth_token申请地址：https://dev.yinxiang.com/doc/articles/dev_tokens.php
-auth_token = "S=s64:U=133f619:E=16c299788b0:C=16c058b02a0:P=1cd:A=en-devtoken:V=2:H=9d33d7358ebebc826206c2ae2da274e6"
+auth_token = config_raw.get('DEFAULT', 'auth_token').encode('utf-8')
 # 关掉沙盒模式
 sandbox = False
 # True代表使用的国内的印象笔记，而不是Evernote国际版
@@ -212,7 +213,7 @@ def ReplaceBodyHtml(html, hash_code, image_data, image_type):
     image_file.write(image_data)
     image_file.close()
     image_file = open(file_path, "rb")
-    FtpUpload('./images/note_images/' + file_name, image_file)
+    FtpUpload('./img/note_content_images/' + file_name, image_file)
     image_file.close()
     os.remove(file_path)
 
@@ -221,6 +222,25 @@ def ReplaceBodyHtml(html, hash_code, image_data, image_type):
     src = "src=\"%s\"" % (note_image_http_url + file_name)
     result = result.replace("<img", "<img " + src)
     return html.replace(enmedia, result)
+
+
+def GetContentSnippet(content):
+    content = content.replace('&nbsp;', '').decode('utf-8')
+    content = content[0:2000] if len(content) >= 2000 else content
+    content = content.encode('utf-8')
+    snippet = ''
+
+    en_media_pattern = ">([^<]+)<*"
+    proc = re.compile(en_media_pattern, re.M | re.I)
+    valid_data = proc.findall(content)
+
+    if valid_data:
+        for group in valid_data:
+            snippet += group.strip('<').rstrip('>')
+    snippet = snippet.decode('utf-8')
+    snippet = snippet[0:200] if len(snippet) >= 200 else snippet
+    snippet = snippet.encode('utf-8')
+    return snippet
 
 
 def DoUpdate():
@@ -232,15 +252,16 @@ def DoUpdate():
 
     # 创建一个印象笔记client对象
     client = EvernoteClient(token=auth_token, sandbox=sandbox, china=china, service_host='app.yinxiang.com')
+    # client = EvernoteClient(consumer_key='18125072305-7182', consumer_secret='36c0b023bfa4fad4', china=china, service_host='app.yinxiang.com')
 
     # 用户信息
-    user_store = client.get_user_store()
+    # user_store = client.get_user_store()
 
     # 笔记信息
     note_store = client.get_note_store()
 
     # 用户名称
-    user_info = user_store.getUser()
+    # user_info = user_store.getUser()
 
     # 获取所有笔记本
     notebooks = note_store.listNotebooks()
@@ -282,7 +303,7 @@ def DoUpdate():
             # 是否需要添加
             is_insert = IsInsertNote(note_guid)
             update_note_info = IsUpdateNote(note_guid, note_update_time)
-            update_note_info_id = update_note_info.id if update_note_info else ''
+            # update_note_info_id = update_note_info.id if update_note_info else ''
 
             # 需要更新的笔记
             if is_insert or update_note_info:
@@ -314,7 +335,7 @@ def DoUpdate():
                     for res in note_resources:
                         image_file_count += 1
                         # 资源的guid
-                        res_guid = res.guid
+                        # res_guid = res.guid
                         # 资源类型
                         res_mime = res.mime
 
@@ -338,10 +359,12 @@ def DoUpdate():
                 notes_file.close()
                 os.remove(file_path)
 
+                snippet = GetContentSnippet(note_content)
+
                 result = note_info_manager.InsertOrUpdateNoteInfo(note_guid,
                                                                   note_title, classify_child_id,
                                                                   is_blog,
-                                                                  note_tag_names, file_name,
+                                                                  note_tag_names, file_name, snippet,
                                                                   note_create_time,
                                                                   note_update_time, is_insert)
                 info_str = '笔记[%s]%s %s' % (note_title, '添加' if is_insert else '更新', '成功' if result else '失败')
@@ -370,13 +393,12 @@ try:
     logging.info(info_str)
     MakeMailSendStr(info_str)
     mail_send_str = info_str + '\r\n' + mail_send_str
-    mail = mail_helper.MailHelper()
-    ftp.quit()
 except Exception as e:
     info_str = 'Exception: [%s]' % e
     logging.info(info_str)
     MakeMailSendStr(info_str)
-    ftp.quit()
 finally:
+    mail = mail_helper.MailHelper()
+    ftp.quit()
     mail.SendEmail(mail_send_str)
     pass

@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\My\\Code\\application\\asp.net core mvc python evernote\\evernote_blog\\evernote_blog\\evernote_blog.csproj": {}
+  },
+  "projects": {
+    "D:\\My\\Code\\application\\asp.net core mvc python evernote\\evernote_blog\\evernote_blog\\evernote_blog.csproj": {
+      "version": "1.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\My\\Code\\application\\asp.net core mvc python evernote\\evernote_blog\\evernote_blog\\evernote_blog.csproj",
+        "projectName": "evernote_blog",
+        "projectPath": "D:\\My\\Code\\application\\asp.net core mvc python evernote\\evernote_blog\\evernote_blog\\evernote_blog.csproj",
+        "packagesPath": "C:\\Users\\Tinhead\\.nuget\\packages\\",
+        "outputPath": "D:\\My\\Code\\application\\asp.net core mvc python evernote\\evernote_blog\\evernote_blog\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tinhead\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.Extensions.Caching.Redis": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

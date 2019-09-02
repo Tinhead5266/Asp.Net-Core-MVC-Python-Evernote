@@ -1,0 +1,1 @@
+python27 auto_get_evernote.py

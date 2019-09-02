@@ -40,8 +40,6 @@
 <section class="blog_area p_120">
     <div class="container">
         <div class="row">
-            @await Html.PartialAsync("_BlogUserSection", (List<ShowNoteClassifyInfo>)ViewBag.ShowNoteClassifyInfo)
-
             <div class="col-lg-8">
                 <div class="blog_left_sidebar">
                     @foreach (var noteInfoItem in ViewBag.NoteInfo)
@@ -126,6 +124,9 @@
                     </nav>
                 </div>
             </div>
+
+            @await Html.PartialAsync("_BlogUserSection", (List<ShowNoteClassifyInfo>)ViewBag.ShowNoteClassifyInfo)
+
         </div>
     </div>
 </section>

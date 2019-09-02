@@ -1,0 +1,14 @@
+D:\My\Code\application\asp.net core mvc python evernote\test\bin\Release\netcoreapp2.2\test.deps.json
+D:\My\Code\application\asp.net core mvc python evernote\test\bin\Release\netcoreapp2.2\test.runtimeconfig.json
+D:\My\Code\application\asp.net core mvc python evernote\test\bin\Release\netcoreapp2.2\test.runtimeconfig.dev.json
+D:\My\Code\application\asp.net core mvc python evernote\test\bin\Release\netcoreapp2.2\test.dll
+D:\My\Code\application\asp.net core mvc python evernote\test\bin\Release\netcoreapp2.2\test.pdb
+D:\My\Code\application\asp.net core mvc python evernote\test\obj\Release\netcoreapp2.2\test.csprojAssemblyReference.cache
+D:\My\Code\application\asp.net core mvc python evernote\test\obj\Release\netcoreapp2.2\test.csproj.CoreCompileInputs.cache
+D:\My\Code\application\asp.net core mvc python evernote\test\obj\Release\netcoreapp2.2\test.RazorAssemblyInfo.cache
+D:\My\Code\application\asp.net core mvc python evernote\test\obj\Release\netcoreapp2.2\test.RazorAssemblyInfo.cs
+D:\My\Code\application\asp.net core mvc python evernote\test\obj\Release\netcoreapp2.2\test.AssemblyInfoInputs.cache
+D:\My\Code\application\asp.net core mvc python evernote\test\obj\Release\netcoreapp2.2\test.AssemblyInfo.cs
+D:\My\Code\application\asp.net core mvc python evernote\test\obj\Release\netcoreapp2.2\test.RazorTargetAssemblyInfo.cache
+D:\My\Code\application\asp.net core mvc python evernote\test\obj\Release\netcoreapp2.2\test.dll
+D:\My\Code\application\asp.net core mvc python evernote\test\obj\Release\netcoreapp2.2\test.pdb

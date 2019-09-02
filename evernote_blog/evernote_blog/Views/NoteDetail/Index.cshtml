@@ -23,7 +23,6 @@
 <section class="blog_area p_120 single-post-area">
     <div class="container">
         <div class="row">
-            @await Html.PartialAsync("_BlogUserSection", (List<ShowNoteClassifyInfo>)ViewBag.ShowNoteClassifyInfo)
 
             <div class="col-lg-8">
                 <div class="main_blog_details">
@@ -60,6 +59,8 @@
                         </div>*@
                 </div>
             </div>
+
+            @await Html.PartialAsync("_BlogUserSection", (List<ShowNoteClassifyInfo>)ViewBag.ShowNoteClassifyInfo)
         </div>
     </div>
 </section>

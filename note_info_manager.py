@@ -83,13 +83,13 @@ class NoteInfoManager:
         return True
 
     # 添加修改笔记信息
-    def InsertOrUpdateNoteInfo(self, note_guid, title, classify_id, is_blog, tags, content, create_time,
+    def InsertOrUpdateNoteInfo(self, note_guid, title, classify_id, is_blog, tags, content, snippet, create_time,
                                update_time, is_insert=False):
         # 修改
         sql_str = ''
         if not is_insert:
-            args = (title, classify_id, is_blog, tags, content, create_time, update_time, note_guid)
-            sql_str = "UPDATE `evernote_blog`.`note_info` SET `title` = %s, `classify_id` =  %s, `is_blog` =  %s, `tags` =  %s, `content` =  %s, `create_time` =  %s, `update_time` =  %s WHERE (`note_guid` =  %s);"
+            args = (title, classify_id, is_blog, tags, content, snippet, create_time, update_time, note_guid)
+            sql_str = "UPDATE `evernote_blog`.`note_info` SET `title` = %s, `classify_id` =  %s, `is_blog` =  %s, `tags` =  %s, `content` =  %s,`content_snippet` =  %s, `create_time` =  %s, `update_time` =  %s WHERE (`note_guid` =  %s);"
             result = self.sql_helper.ExecNonQuery(sql_str, args)
 
             if not result:
@@ -98,8 +98,8 @@ class NoteInfoManager:
 
         # 添加
         else:
-            args = (title, classify_id, is_blog, tags, content, create_time, update_time, note_guid)
-            sql_str = "INSERT INTO `evernote_blog`.`note_info` (`title`, `classify_id`, `is_blog`, `tags`, `content`, `create_time`, `update_time`, `note_guid`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s);"
+            args = (title, classify_id, is_blog, tags, content, snippet, create_time, update_time, note_guid)
+            sql_str = "INSERT INTO `evernote_blog`.`note_info` (`title`, `classify_id`, `is_blog`, `tags`, `content`,`content_snippet`, `create_time`, `update_time`, `note_guid`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);"
             # sql_str = self.sql_helper.FormatSqlStr(sql_str, args)
 
             result = self.sql_helper.ExecNonQuery(sql_str, args)

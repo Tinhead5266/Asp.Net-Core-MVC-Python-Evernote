@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="col-lg-4">
+    <div class="blog_right_sidebar">
+        <aside class="single_sidebar_widget search_widget">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Posts" id="searchText">
+                <span class="input-group-btn">
+                    <button id="searchTextButton" class="btn btn-default" type="button" onclick="SearchNoteBySearchText();"><i class="lnr lnr-magnifier"></i></button>
+                </span>
+            </div><!-- /input-group -->
+            <div class="br"></div>
+        </aside>
+        <aside class="single_sidebar_widget author_widget">
+            <img class="author_img img-fluid" src="~/img/blog/author.jpg" alt="" style="border-radius: 5px;">
+            <h4>Tinhead</h4>
+            @*<p>Senior blog writer</p>*@
+            <p>这个人很懒，什么介绍也不写</p>
+            @*<div class="social_icon">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-behance"></i></a>
+            </div>*@
+            <div class="br"></div>
+        </aside>
+        
+        <aside class="single_sidebar_widget post_category_widget">
+            <h4 class="widget_title">Post Catgories</h4>
+            <ul class="list cat-list">
+                @foreach (var showNoteClassifyInfo in ViewBag.ShowNoteClassifyInfo)
+                {
+                    <li>
+                        <a class="d-flex justify-content-between" onclick="SearchNoteByClassifyId(@showNoteClassifyInfo.ClassifyId);">
+                            <p>@showNoteClassifyInfo.ClassifyName</p>
+                            <p>@showNoteClassifyInfo.NoteCount</p>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </aside>
+    </div>
+</div>
+<script>
+
+    //查询回车事件
+    $('#searchText').bind('keyup', function (event) {
+        if (event.keyCode == "13") {
+            $('#searchTextButton').click();
+        }
+
+    });
+</script>

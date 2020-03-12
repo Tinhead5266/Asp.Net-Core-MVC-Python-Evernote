@@ -65,7 +65,7 @@ pathlib2==2.3.3
 pickleshare==0.7.5
 prometheus-client==0.7.1
 prompt-toolkit==1.0.15
-psutil==5.6.2
+psutil==5.6.6
 pycodestyle==2.5.0
 pycparser==2.19
 pyflakes==2.1.1

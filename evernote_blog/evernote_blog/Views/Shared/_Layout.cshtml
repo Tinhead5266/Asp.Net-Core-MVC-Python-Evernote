@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="~/css/style.css?v=1.2">
     <link rel="stylesheet" href="~/css/responsive.css?v=1.1">
     <script src="~/js/jquery-3.2.1.min.js?v=1.0"></script>
+    <script src="~/js/jquery.lazyload.min.js"></script>
     <script src="~/js/popper.js?v=1.0"></script>
     @*<script src="~/js/bootstrap.min.js?v=1.0"></script>*@
     <script src="~/vendors/nice-select/js/jquery.nice-select.min.js?v=1.0"></script>
@@ -38,7 +39,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container box_1620">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="~/img/logo.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href="index.html"><img class=" lazy" data-original="~/img/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -179,6 +180,19 @@
         PageIndex = 1;
         Action();
     }
+    $(function() {
+        $("img .lazy").lazyload({
+            threshold: 100,                   //设置Threshold参数来实现滚到距离其xx px时就加载
+            placeholder: "~/img/image_loading.png",//为某一图片路径.此图片用来占据将要加载的图片的位置,待图片加载时,占位图则会隐藏,比如放一些等待加载的图片来优化用户体验效果。
+            //event: "click",                 //触发定义的事件时，图片才开始加载（此处click代表点击图片才开始加载，还有mouseover，sporty,foobar(…)）
+            //effects: "fadeIn",               //图片显示时的效果，默认是show
+            //container: $("#container"),     //让你在拉动某DIV的滚动条时依次加载其中的图片
+            failure_limit: 1,              //一般用于当页面中图片不连续时使用，滚动页面的时候, Lazy Load 会循环为加载的图片. 在循环中检测图片是否在可视区域内，插件默认情况下在找到第一张不在可见区域的图片时停止循环。
+            //skip_invisible: false          //是否加载隐藏图片
+        });
+    });
+    //图片懒加载
+    
 
 
 </script>

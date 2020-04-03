@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a532da6-7b91-4ae8-8643-327f469dab5c" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto_get_evernote.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_get_evernote.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto_update_evernote.log" beforeDir="false" afterPath="$PROJECT_DIR$/auto_update_evernote.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note_info_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/note_info_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/obj/Debug/netcoreapp2.2/test.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/test/obj/Debug/netcoreapp2.2/test.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/obj/Debug/netcoreapp2.2/test.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/test/obj/Debug/netcoreapp2.2/test.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/obj/Debug/netcoreapp2.2/test.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/test/obj/Debug/netcoreapp2.2/test.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/obj/test.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/test/obj/test.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/.vs/evernote_blog/DesignTimeBuild/.dtbcache" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/.vs/evernote_blog/DesignTimeBuild/.dtbcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/.vs/evernote_blog/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/.vs/evernote_blog/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/.vs/evernote_blog/v16/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/.vs/evernote_blog/v16/Server/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/bin/Release/netcoreapp2.2/evernote_blog.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/bin/Release/netcoreapp2.2/evernote_blog.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/bin/Release/netcoreapp2.2/evernote_blog.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/bin/Release/netcoreapp2.2/evernote_blog.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/evernote_blog.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/evernote_blog.csproj.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/Razor/Views/NoteDetail/Index.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/Razor/Views/NoteDetail/Index.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/Razor/Views/NoteInfoes/Index.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/Razor/Views/NoteInfoes/Index.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/Razor/Views/Shared/_BlogUserSection.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/Razor/Views/Shared/_BlogUserSection.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/evernote_blog.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/evernote_blog.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/evernote_blog.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/evernote_blog.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/evernote_blog.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/evernote_blog/evernote_blog/obj/Release/netcoreapp2.2/evernote_blog.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/helloworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/helloworld.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,41 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auto_get_evernote.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/helloworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3041">
-              <caret line="231" selection-start-line="231" selection-end-line="231" />
-              <folding>
-                <element signature="e#24#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/software/DevelopmentTools/python3/envs/python27/Lib/ftplib.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4185">
-              <caret line="156" column="8" selection-start-line="156" selection-start-column="8" selection-end-line="156" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/software/DevelopmentTools/python3/envs/python27/Lib/site-packages/evernote/api/client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2916">
-              <caret line="108" column="25" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+            <state relative-caret-position="224">
+              <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -93,8 +75,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/note_info_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2376">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state>
+              <caret selection-end-column="23" />
+              <folding>
+                <element signature="e#24#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+            <state relative-caret-position="27">
+              <caret line="1" column="113" selection-start-line="1" selection-start-column="113" selection-end-line="1" selection-end-column="113" />
             </state>
           </provider>
         </entry>
@@ -154,6 +139,9 @@
       <find>smtplib</find>
       <find>logging.info</find>
       <find>FtpUpload</find>
+      <find>GetBlogTagGuid</find>
+      <find>blog_tag_guid</find>
+      <find>IsBlogNote</find>
     </findStrings>
     <replaceStrings>
       <replace>logging.info</replace>
@@ -181,9 +169,10 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/mail_helper.py" />
-        <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/note_info_manager.py" />
+        <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/auto_get_evernote.py" />
+        <option value="$PROJECT_DIR$/test/helloworld.py" />
       </list>
     </option>
   </component>
@@ -208,26 +197,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="asp.net core mvc python evernote" type="b2602c69:ProjectViewProjectNode" />
-              <item name="asp.net core mvc python evernote" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="asp.net core mvc python evernote" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部库" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Cython" />
     <property name="last_opened_file_path" value="D:/software/DevelopmentTools/python3/envs/python27/python27.exe" />
@@ -235,11 +211,11 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\My\Code\application\asp.net core mvc python evernote\resources\evernote-sdk-python3\sample\client" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\My\Code\application\asp.net core mvc python evernote" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My\Code\application\asp.net core mvc python evernote\resources\evernote-sdk-python3\sample\client" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -254,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.auto_get_evernote">
+  <component name="RunManager" selected="Python.helloworld">
     <configuration name="auto_get_evernote" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="asp.net core mvc python evernote" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -269,6 +245,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto_get_evernote.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="helloworld" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="asp.net core mvc python evernote" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/helloworld.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -302,9 +300,11 @@
     <list>
       <item itemvalue="Python.auto_get_evernote" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.helloworld" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.helloworld" />
         <item itemvalue="Python.auto_get_evernote" />
         <item itemvalue="Python.test" />
       </list>
@@ -335,6 +335,10 @@
       <workItem from="1565274594311" duration="526000" />
       <workItem from="1566996856532" duration="58000" />
       <workItem from="1567005419020" duration="619000" />
+      <workItem from="1580043284253" duration="5224000" />
+      <workItem from="1583580939641" duration="1230000" />
+      <workItem from="1583720880297" duration="5306000" />
+      <workItem from="1584600836500" duration="1322000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1563887619184</created>
@@ -368,7 +372,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185366000" />
+    <option name="totallyTimeSpent" value="198448000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -383,7 +387,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49840257" visible="true" weight="0.17004265" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49840257" visible="true" weight="0.12633263" />
       <window_info id="Structure" order="1" sideWeight="0.50159746" side_tool="true" weight="0.15085287" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -397,7 +401,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32939914" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32832617" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32832617" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32939914" />
       <window_info anchor="bottom" id="调试" order="13" weight="0.36373392" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -448,6 +452,16 @@
           <line>64</line>
           <option name="timeStamp" value="213" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/auto_get_evernote.py</url>
+          <line>277</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/auto_get_evernote.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -460,10 +474,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/asp_net_core_mvc_python_evernote$pydevd.coverage" NAME="pydevd Coverage Results" MODIFIED="1563453271770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pydev" />
+    <SUITE FILE_PATH="coverage/asp_net_core_mvc_python_evernote$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1583725501160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/asp_net_core_mvc_python_evernote$setup.coverage" NAME="setup Coverage Results" MODIFIED="1563372932321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evernote" />
     <SUITE FILE_PATH="coverage/asp_net_core_mvc_python_evernote$yinxiang.coverage" NAME="yinxiang Coverage Results" MODIFIED="1563459160886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/resources/evernote-sdk-python3/sample/client" />
     <SUITE FILE_PATH="coverage/asp_net_core_mvc_python_evernote$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1563461978862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/asp_net_core_mvc_python_evernote$auto_get_evernote.coverage" NAME="auto_get_evernote Coverage Results" MODIFIED="1564821080417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/asp_net_core_mvc_python_evernote$auto_get_evernote.coverage" NAME="auto_get_evernote Coverage Results" MODIFIED="1580047328332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/asp_net_core_mvc_python_evernote$test.coverage" NAME="test Coverage Results" MODIFIED="1563712735314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/asp_net_core_mvc_python_evernote$ntpath.coverage" NAME="ntpath Coverage Results" MODIFIED="1563457359039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/software/DevelopmentTools/python3/Lib" />
     <SUITE FILE_PATH="coverage/asp_net_core_mvc_python_evernote$setup__1_.coverage" NAME="setup (1) Coverage Results" MODIFIED="1563457392888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/resources/evernote-sdk-python3" />
@@ -625,8 +640,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auto_get_evernote.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3041">
-          <caret line="231" selection-start-line="231" selection-end-line="231" />
+        <state relative-caret-position="763">
+          <caret line="221" column="24" selection-start-line="221" selection-start-column="23" selection-end-line="221" selection-end-column="24" />
           <folding>
             <element signature="e#24#38#0" expanded="true" />
           </folding>
@@ -640,16 +655,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/DevelopmentTools/python3/envs/python27/Lib/site-packages/evernote/api/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/test/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2916">
+        <state relative-caret-position="517">
           <caret line="108" column="25" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
         </state>
       </provider>
@@ -670,8 +681,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/note_info_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state>
+          <caret selection-end-column="23" />
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -682,6 +696,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="113" selection-start-line="1" selection-start-column="113" selection-end-line="1" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/software/DevelopmentTools/python3/envs/python27/Lib/site-packages/pymysql/cursors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4347">
@@ -689,10 +710,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.ini">
+    <entry file="file://D:/software/DevelopmentTools/python3/envs/python27/Lib/site-packages/evernote/api/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+        <state relative-caret-position="828">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/helloworld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
         </state>
       </provider>
     </entry>

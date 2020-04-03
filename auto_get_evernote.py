@@ -12,21 +12,27 @@ import time
 import ftplib
 import configparser
 import mail_helper
+# import auto_login
 
 logging_path = os.getcwd() + '\\logs'
 logging_path = logging_path.strip().rstrip("\\")
 if not os.path.exists(logging_path):
     os.makedirs(logging_path)
 
-logging.basicConfig(level=logging.DEBUG,
-                    filename='auto_update_evernote.log',
-                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')
+logging.basicConfig(
+    level=logging.DEBUG,
+    filename='auto_update_evernote.log',
+    format=
+    '%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')
 """
 配置区域，请自行修改
 - auth_token: 访问 https://app.yinxiang.com/api/DeveloperToken.action 生成
 - diary_template_name：日记模板名称，请保证有且仅有一个标题为这个的笔记
 - diary_notebook_name：复制生成的笔记要放入哪个笔记本，填写笔记本名称
 """
+# # 更新token
+# auto_login.AutoLogin().UpdateToken()
+
 # 创建临时存放数据的文件夹
 temp_path = os.getcwd() + '\\temp'
 temp_path = temp_path.strip().rstrip("\\")
@@ -43,7 +49,8 @@ cfg = "./config.ini"
 config_raw = configparser.RawConfigParser()
 config_raw.read(cfg)
 
-note_image_http_url = config_raw.get('FTPSection', 'note_image_http_url').encode('utf-8')
+note_image_http_url = config_raw.get('FTPSection',
+                                     'note_image_http_url').encode('utf-8')
 notes_http_url = config_raw.get('FTPSection', 'notes_http_url').encode('utf-8')
 # ftp
 
@@ -80,6 +87,7 @@ mail_send_str = ''
 logging.info(info_str)
 
 
+# 制作换行消息
 def MakeMailSendStr(str):
     global mail_send_str
     mail_send_str += str + '\r\n'
@@ -94,16 +102,17 @@ update_failed_count = 0
 
 
 class Item:
-
     def __init__(self):
         pass
 
 
+# 上传ftp服务器
 def FtpUpload(file_name, data):
     buf_size = 1024  # 设置缓冲器大小
     ftp.storbinary('STOR ' + file_name, data, buf_size)
 
 
+# 根据guid获取分类信息
 def GetClassifyInfo(guid):
     if classify_data:
         for classify_item in classify_data:
@@ -112,6 +121,7 @@ def GetClassifyInfo(guid):
     return False
 
 
+# 更新分类信息
 def UpdateClassifyInfo(classify_name, parent_id, guid):
     parent_classify = GetClassifyInfo(guid)
     is_classify_insert_update = False
@@ -127,10 +137,9 @@ def UpdateClassifyInfo(classify_name, parent_id, guid):
         is_classify_insert_update = True
 
     if is_classify_insert_update:
-        result = note_info_manager.InsertOrClassifyInfo(parent_classify.id,
-                                                        parent_classify.classify_name,
-                                                        parent_classify.parent_id,
-                                                        parent_classify.guid)
+        result = note_info_manager.InsertOrClassifyInfo(
+            parent_classify.id, parent_classify.classify_name,
+            parent_classify.parent_id, parent_classify.guid)
         if not result:
             info_str = '添加或更新笔记分类失败'
             logging.info(info_str)
@@ -141,6 +150,7 @@ def UpdateClassifyInfo(classify_name, parent_id, guid):
     return result
 
 
+# 是否添加比较
 def IsInsertNote(note_guid):
     if notes_update:
         for note in notes_update:
@@ -150,6 +160,7 @@ def IsInsertNote(note_guid):
     return True
 
 
+# 是否更新笔记
 def IsUpdateNote(note_guid, note_update):
     if notes_update:
         for note in notes_update:
@@ -159,6 +170,7 @@ def IsUpdateNote(note_guid, note_update):
     return False
 
 
+# 获取笔记Tag编号
 def GetBlogTagGuid(tags_list):
     if tags_list:
         for tag_item in tags_list:
@@ -168,6 +180,7 @@ def GetBlogTagGuid(tags_list):
     return False
 
 
+# 获取笔记tag名称
 def GetNoteTagNames(tags_list, note_tag_guids):
     note_tag_names = []
     if tags_list and note_tag_guids:
@@ -178,6 +191,7 @@ def GetNoteTagNames(tags_list, note_tag_guids):
     return note_tag_names
 
 
+# 是否是博客笔记
 def IsBlogNote(blog_tag_guid, note_tag_guids):
     if note_tag_guids:
         for note_tag_guid in note_tag_guids:
@@ -192,7 +206,8 @@ def ReplaceBodyHtml(html, hash_code, image_data, image_type):
         return ""
 
     en_media_pattern = "(.*)(?P<en_media><en-media[^>]*?hash=\"%(hash)s\".*?((/>)|(></en-media>)))(.*)" % {
-        'hash': hash_code}
+        'hash': hash_code
+    }
     proc = re.compile(en_media_pattern, re.DOTALL | re.MULTILINE)
     valid_data = proc.match(html)
 
@@ -244,14 +259,17 @@ def GetContentSnippet(content):
 
 
 def DoUpdate():
-    global notes_count
+    global notes_count  #notes_count为外部变量 加上global可以调用外部变量
     global insert_count
     global update_count
     global insert_failed_count
     global update_failed_count
 
     # 创建一个印象笔记client对象
-    client = EvernoteClient(token=auth_token, sandbox=sandbox, china=china, service_host='app.yinxiang.com')
+    client = EvernoteClient(token=auth_token,
+                            sandbox=sandbox,
+                            china=china,
+                            service_host='app.yinxiang.com')
     # client = EvernoteClient(consumer_key='18125072305-7182', consumer_secret='36c0b023bfa4fad4', china=china, service_host='app.yinxiang.com')
 
     # 用户信息
@@ -285,7 +303,8 @@ def DoUpdate():
         stack = notebook.stack
         stack_guid = guid + 'f'
         classify_parent_id = UpdateClassifyInfo(stack, 0, stack_guid)
-        classify_child_id = UpdateClassifyInfo(notebook_name, classify_parent_id, guid)
+        classify_child_id = UpdateClassifyInfo(notebook_name,
+                                               classify_parent_id, guid)
 
         info_str = 'guid: [%s], notebook [%s]' % (guid, notebook_name)
         logging.info(info_str)
@@ -312,7 +331,7 @@ def DoUpdate():
                 note_content = note_store.getNoteContent(note_guid)
                 index = note_content.find('<en-note>')
                 end = note_content.find('</en-note>')
-                note_content = note_content[index: end] + '</en-note>'
+                note_content = note_content[index:end] + '</en-note>'
                 # 笔记名称
                 note_title = note.title
                 # 笔记标签guid
@@ -320,17 +339,20 @@ def DoUpdate():
 
                 is_blog = 0 if IsBlogNote(blog_tag_guid, note_tag_guids) else 1
                 note_tag_names = GetNoteTagNames(tags_list, note_tag_guids)
-                note_tag_names = ','.join(note_tag_names) if note_tag_names else ''
+                note_tag_names = ','.join(
+                    note_tag_names) if note_tag_names else ''
                 note_create_time = note.created
                 note_update_time = note.updated
 
-                info_str = '%s笔记: [%s]' % ('添加' if is_insert else '更新', note_title)
+                info_str = '%s笔记: [%s]' % ('添加' if is_insert else '更新',
+                                           note_title)
                 logging.info(info_str)
                 MakeMailSendStr(info_str)
 
                 note_resources = note.resources
                 if note_resources is not None:
-                    note_resources = note_store.getNote(note_guid, False, True, False, False).resources
+                    note_resources = note_store.getNote(
+                        note_guid, False, True, False, False).resources
                     image_file_count = 0
                     for res in note_resources:
                         image_file_count += 1
@@ -345,7 +367,9 @@ def DoUpdate():
                             hash_str = hashlib.md5()
                             hash_str.update(attachment_data)
                             hash_code = hash_str.hexdigest()
-                            note_content = ReplaceBodyHtml(note_content, hash_code, attachment_data, res_mime)
+                            note_content = ReplaceBodyHtml(
+                                note_content, hash_code, attachment_data,
+                                res_mime)
 
                 # 保存笔记
 
@@ -361,13 +385,12 @@ def DoUpdate():
 
                 snippet = GetContentSnippet(note_content)
 
-                result = note_info_manager.InsertOrUpdateNoteInfo(note_guid,
-                                                                  note_title, classify_child_id,
-                                                                  is_blog,
-                                                                  note_tag_names, file_name, snippet,
-                                                                  note_create_time,
-                                                                  note_update_time, is_insert)
-                info_str = '笔记[%s]%s %s' % (note_title, '添加' if is_insert else '更新', '成功' if result else '失败')
+                result = note_info_manager.InsertOrUpdateNoteInfo(
+                    note_guid, note_title, classify_child_id, is_blog,
+                    note_tag_names, file_name, snippet, note_create_time,
+                    note_update_time, is_insert)
+                info_str = '笔记[%s]%s %s' % (note_title, '添加' if is_insert else
+                                            '更新', '成功' if result else '失败')
                 logging.info(info_str)
                 MakeMailSendStr(info_str)
                 if result:
@@ -385,11 +408,11 @@ def DoUpdate():
 try:
     DoUpdate()
     info_str = '更新完成，笔记共[%s] %s %s %s %s' % (
-        notes_count,
-        ', 添加[' + str(insert_count) + ']' if insert_count > 0 else '',
-        ', 更新[' + str(update_count) + ']' if update_count > 0 else '',
-        ', 添加失败[' + str(insert_failed_count) + ']' if insert_failed_count > 0 else '',
-        ', 更新失败[' + str(update_failed_count) + ']' if update_failed_count > 0 else '')
+        notes_count, ', 添加[' + str(insert_count) +
+        ']' if insert_count > 0 else '', ', 更新[' + str(update_count) +
+        ']' if update_count > 0 else '', ', 添加失败[' + str(insert_failed_count) +
+        ']' if insert_failed_count > 0 else '', ', 更新失败[' +
+        str(update_failed_count) + ']' if update_failed_count > 0 else '')
     logging.info(info_str)
     MakeMailSendStr(info_str)
     mail_send_str = info_str + '\r\n' + mail_send_str

@@ -26,7 +26,7 @@ flake8==3.7.8
 freeze==1.0.10
 functools32==3.2.3.post2
 futures==3.2.0
-httplib2==0.13.0
+httplib2==0.18.0
 idna==2.8
 imagesize==1.1.0
 ipaddress==1.0.22

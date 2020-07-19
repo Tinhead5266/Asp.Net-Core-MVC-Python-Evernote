@@ -8,4 +8,9 @@
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>D:\My\ftp_upload\Publish</_PublishTargetUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="EvernoteBlogConnection">
+      <Value>server=47.102.145.8%3bport=3306%3bdatabase=evernote_blog%3buid=tinhead%3bpwd=Tinhead5266.%3bCharSet=utf8</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
 </Project>
